@@ -180,10 +180,11 @@ clear
 
                         ejecutar1=S
                         case $ejecutar1 in
-                        [sS]* ) echo ""
+                        [sS]* ) echo ""                       
+                        cd /home/orangepi/
                         git pull 
                         sleep 3
-                        cd /home/orangepi/
+                        
                         #sudo chmod 777 ORANGE
                         clear
                         cd /home/orangepi/AUTOSTART
