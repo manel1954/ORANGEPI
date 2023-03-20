@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Name=Editar Libre
 Comment=
-Exec=mate-terminal --geometry=80x47 -x sh editar_MMDVMLIBRE_05.sh
+Exec=mate-terminal --geometry=80x47 -x sh editar_especial.sh
 Icon=/home/ORANGEPIpi/ORANGEPI/EDITAR_LIBRE.png
 Path=/home/ORANGEPIpi/ORANGEPI
 Terminal=false
