@@ -108,7 +108,7 @@ pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMBM.ini)
 
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
 #pas=`grep -n '\<Password\>' /home/orangepi/MMDVMHost/MMDVMBM.ini`
-pas1=`expr substr $pas 5 30`
+pas1=`expr substr $pas 9 30`
 echo "$pas1"
 
 
