@@ -25,7 +25,7 @@ echo "\33[1;33m"
 		    case $ejecutar1 in
 			[sS]* ) echo ""
 			echo "ok >>>>>"
-if [ -d /home/orangepi/bluedv_anterior/ ];
+if [ -d /home/ORANGEPIpi/bluedv_anterior/ ];
 then
 			clear
 			echo "\33[1;32mYA TIENES ACTUALIZADA LA ÚLTIMA VERSIÓN DISPONIBLE"
@@ -45,13 +45,13 @@ then
 			echo "\33[1;32m******************************************************"
 			sleep 5
 else
-			cd /home/orangepi/
+			cd /home/ORANGEPIpi/
   			mkdir bluedv_anterior
             sudo cp bluedv/*.* bluedv_anterior/
-            sudo rm -r /home/orangepi/bluedv
+            sudo rm -r /home/ORANGEPIpi/bluedv
 			git clone https://github.com/ea3eiz/bluedv
 			
-			cd /home/orangepi/bluedv
+			cd /home/ORANGEPIpi/bluedv
 			sudo chmod 777 DExtra_Hosts.txt
 		
 fi	
@@ -77,7 +77,7 @@ echo "\33[1;33m"
 		    case $ejecutar1 in
 			[sS]* ) echo ""
 			echo "ok >>>>>"
-if [ -d /home/orangepi/bluedv_anterior/ ];
+if [ -d /home/ORANGEPIpi/bluedv_anterior/ ];
 then
 			clear
 			echo "\33[1;32mVOLVIENDO A LA VERSIÓN ANTERIOR"
@@ -96,7 +96,7 @@ then
 			echo "\33[1;32m* VOLVIENDO A LA VERSIÓN ANTERIOR *"
 			echo "\33[1;32m***********************************"
 			sleep 5
-			cd /home/orangepi/
+			cd /home/ORANGEPIpi/
             sudo cp bluedv_anterior/*.* bluedv/
             sudo rm -R bluedv_anterior
 			

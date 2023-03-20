@@ -36,11 +36,11 @@ clear
 		                case $ejecutar1 in
 			            [sS]* ) echo ""
 			            echo ">>>>>>>>> GRABAR NEXTION >>>>>>>>"
-			            #sudo cp -f /home/orangepi/MMDVMHost/Nextion_G4KLX/nextion.py /home/orangepi/MMDVMHost/Nextion_DB2OE
-                        #cd /home/orangepi/MMDVMHost/Nextion_DB2OE
+			            #sudo cp -f /home/ORANGEPIpi/MMDVMHost/Nextion_G4KLX/nextion.py /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
+                        #cd /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
-                        cd /home/orangepi/ORANGE/
+                        cd /home/ORANGEPIpi/ORANGEPI/
                         sudo sh grabar_nextion_05.sh
                         exit;
 		                break;;
@@ -93,11 +93,11 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> GRABAR NEXTION ORIGINAL >>>>>>>>"
-                        #sudo cp -f /home/orangepi/MMDVMHost/Nextion_G4KLX/nextion.py /home/orangepi/MMDVMHost/Nextion_DB2OE
-                        #cd /home/orangepi/MMDVMHost/Nextion_DB2OE
+                        #sudo cp -f /home/ORANGEPIpi/MMDVMHost/Nextion_G4KLX/nextion.py /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
+                        #cd /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
-                        cd /home/orangepi/ORANGE/
+                        cd /home/ORANGEPIpi/ORANGEPI/
                         sudo sh menu_dcs018_06.sh
                         exit;
                         break;;
@@ -115,8 +115,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> INSTALANDO ANYDESK >>>>>>>>"
-                        sudo rm -R /home/orangepi/.anydesk
-                        cd /home/orangepi/Downloads
+                        sudo rm -R /home/ORANGEPIpi/.anydesk
+                        cd /home/ORANGEPIpi/Downloads
                         wget http://download.anydesk.com/rpi/anydesk_2.9.4-1_armhf.deb
                         sudo dpkg -i anydesk_2.9.4-1_armhf.deb
                         sudo apt-get -f install
@@ -141,8 +141,8 @@ clear
                                 [sS]* ) echo ""
 
                                 #Coloca icono Abrir AMBE SERVER en el escritorio
-                                cp -R /home/orangepi/ORANGE/Desktop /home/orangepi/
-                                sudo chmod +x -R /home/orangepi/Desktop
+                                cp -R /home/ORANGEPIpi/ORANGEPI/Desktop /home/ORANGEPIpi/
+                                sudo chmod +x -R /home/ORANGEPIpi/Desktop
                       
                                 echo ">>>>>>>>> RESTAURANDO ICONOS ESCRITORIO <<<<<<<<<"
                                 sleep 3
@@ -183,25 +183,25 @@ clear
                         [sS]* ) echo ""
                         git pull 
                         sleep 3
-                        cd /home/orangepi/
+                        cd /home/ORANGEPIpi/
                         #sudo chmod 777 ORANGE
                         clear
-                        cd /home/orangepi/AUTOSTART
+                        cd /home/ORANGEPIpi/AUTOSTART
                         git pull
 
                         sudo usermod -a -G dialout orangepi
                         sudo usermod -a -G uucp orangepi
-                        cd /home/orangepi/
+                        cd /home/ORANGEPIpi/
                         
                         sudo rm -R qt
                         
-                        mkdir /home/orangepi/qt
+                        mkdir /home/ORANGEPIpi/qt
                         
-                        cd /home/orangepi/ORANGE
+                        cd /home/ORANGEPIpi/ORANGEPI
                         
-                        cp qt* /home/orangepi/qt
+                        cp qt* /home/ORANGEPIpi/qt
 
-                        chmod 777 -R /home/orangepi/qt
+                        chmod 777 -R /home/ORANGEPIpi/qt
 			break;;
 			[nN]* ) echo ""
 clear

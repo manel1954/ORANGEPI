@@ -1,8 +1,8 @@
 #!/bin/bash
-sed -i "6c Exec=/home/orangepi/ORANGE/ejecutar_solodstar_05.sh" /home/orangepi/Desktop/Dstar_solo.desktop
-sed -i "7c Icon=/home/orangepi/ORANGE/SOLO_DSTAR.png" /home/orangepi/Desktop/Dstar_solo.desktop
+sed -i "6c Exec=/home/ORANGEPIpi/ORANGEPI/ejecutar_solodstar_05.sh" /home/ORANGEPIpi/Desktop/Dstar_solo.desktop
+sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/SOLO_DSTAR.png" /home/ORANGEPIpi/Desktop/Dstar_solo.desktop
 
-sed -i "13c SOLODSTAR=OFF" /home/orangepi/status.ini
+sed -i "13c SOLODSTAR=OFF" /home/ORANGEPIpi/status.ini
 
 
 #cierra ircDDBGateway

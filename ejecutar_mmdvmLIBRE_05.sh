@@ -1,12 +1,12 @@
 #!/bin/bash
 
-sed -i "6c Exec=mate-terminal -x sh cerrar_mmdvmLIBRE_05.sh" /home/orangepi/Desktop/Libre.desktop
-sed -i "7c Icon=/home/orangepi/ORANGE/LIBRE_ON.png" /home/orangepi/Desktop/Libre.desktop
-sed -i "10c Name[es_ES]=Cerrar LIBRE" /home/orangepi/Desktop/Libre.desktop
+sed -i "6c Exec=mate-terminal -x sh cerrar_mmdvmLIBRE_05.sh" /home/ORANGEPIpi/Desktop/Libre.desktop
+sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/LIBRE_ON.png" /home/ORANGEPIpi/Desktop/Libre.desktop
+sed -i "10c Name[es_ES]=Cerrar LIBRE" /home/ORANGEPIpi/Desktop/Libre.desktop
 
-sed -i "10c MMDVMLIBRE=ON" /home/orangepi/status.ini
+sed -i "10c MMDVMLIBRE=ON" /home/ORANGEPIpi/status.ini
 
-cd /home/orangepi/MMDVMHost
+cd /home/ORANGEPIpi/MMDVMHost
 echo "\33[1;32m"
 clear
 echo "***********************************************"

@@ -1,55 +1,55 @@
 ﻿#!/bin/bash
 
-            cd /home/orangepi/MMDVMHost
-            sudo cp -f TODOS_LOS_INIS.ini /home/orangepi/Downloads
-            sudo cp -f MMDVM.ini /home/orangepi/Downloads
-            sudo cp -f MMDVM.ini_copia /home/orangepi/Downloads
-            sudo cp -f MMDVM.ini_copia2 /home/orangepi/Downloads
-            sudo cp -f MMDVM.ini_copia3 /home/orangepi/Downloads
-            sudo cp -f MMDVM.ini_original /home/orangepi/Downloads
-            sudo cp -f MMDVMBM.ini /home/orangepi/Downloads
-            sudo cp -f MMDVMBM.ini_copia /home/orangepi/Downloads
-            sudo cp -f MMDVMBM.ini_copia2 /home/orangepi/Downloads
-            sudo cp -f MMDVMBM.ini_copia3 /home/orangepi/Downloads
-            sudo cp -f MMDVMLIBRE.ini /home/orangepi/Downloads
-            sudo cp -f MMDVMLIBRE.ini_uno /home/orangepi/Downloads
-            sudo cp -f MMDVMLIBRE.ini_dos /home/orangepi/Downloads      
-            sudo cp -f MMDVMPLUS.ini /home/orangepi/Downloads
-            sudo cp -f MMDVMPLUS.ini_copia /home/orangepi/Downloads
-            sudo cp -f MMDVMPLUS.ini_copia2 /home/orangepi/Downloads
-            sudo cp -f MMDVMPLUS.ini_copia3 /home/orangepi/Downloads
+            cd /home/ORANGEPIpi/MMDVMHost
+            sudo cp -f TODOS_LOS_INIS.ini /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVM.ini /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVM.ini_copia /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVM.ini_copia2 /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVM.ini_copia3 /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVM.ini_original /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMBM.ini /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMBM.ini_copia /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMBM.ini_copia2 /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMBM.ini_copia3 /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMLIBRE.ini /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMLIBRE.ini_uno /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMLIBRE.ini_dos /home/ORANGEPIpi/Downloads      
+            sudo cp -f MMDVMPLUS.ini /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMPLUS.ini_copia /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMPLUS.ini_copia2 /home/ORANGEPIpi/Downloads
+            sudo cp -f MMDVMPLUS.ini_copia3 /home/ORANGEPIpi/Downloads
 
             #solo Dstar y solo Fusion
-            cp -f MMDVMDSTAR.ini /home/orangepi/Downloads
-            cp -f MMDVMFUSION.ini /home/orangepi/Downloads
+            cp -f MMDVMDSTAR.ini /home/ORANGEPIpi/Downloads
+            cp -f MMDVMFUSION.ini /home/ORANGEPIpi/Downloads
             #fin  Dstar y solo Fusion
 
-            cd  /home/orangepi/YSF2DMR
-            cp -f YSF2DMR.ini /home/orangepi/Downloads
-            cp -f YSF2DMR.ini_copia_01 /home/orangepi/Downloads
-            cp -f YSF2DMR.ini_copia_02 /home/orangepi/Downloads
-            cp -f YSF2DMR.ini_copia_03 /home/orangepi/Downloads
-            cp -f YSF2DMR.ini_copia_04 /home/orangepi/Downloads
+            cd  /home/ORANGEPIpi/YSF2DMR
+            cp -f YSF2DMR.ini /home/ORANGEPIpi/Downloads
+            cp -f YSF2DMR.ini_copia_01 /home/ORANGEPIpi/Downloads
+            cp -f YSF2DMR.ini_copia_02 /home/ORANGEPIpi/Downloads
+            cp -f YSF2DMR.ini_copia_03 /home/ORANGEPIpi/Downloads
+            cp -f YSF2DMR.ini_copia_04 /home/ORANGEPIpi/Downloads
 
-            cd  /home/orangepi/YSFClients/YSFGateway/
-            sudo cp -f YSFGateway.ini /home/orangepi/Downloads
+            cd  /home/ORANGEPIpi/YSFClients/YSFGateway/
+            sudo cp -f YSFGateway.ini /home/ORANGEPIpi/Downloads
             
-            cd /home/orangepi/bluedv/
-            sudo cp -f BlueDVconfig.ini /home/orangepi/Downloads
+            cd /home/ORANGEPIpi/bluedv/
+            sudo cp -f BlueDVconfig.ini /home/ORANGEPIpi/Downloads
 
             cd /usr/local/etc/svxlink/
-            sudo cp -f svxlink.conf /home/orangepi/Downloads
+            sudo cp -f svxlink.conf /home/ORANGEPIpi/Downloads
 
             cd /usr/local/etc/svxlink/svxlink.d/
-            sudo cp -f ModuleEchoLink.conf /home/orangepi/Downloads
+            sudo cp -f ModuleEchoLink.conf /home/ORANGEPIpi/Downloads
 
-            sudo cp /usr/local/etc/opendv/ircddbgateway /home/orangepi/Downloads
-            sudo cp /usr/local/etc/opendv/dstarrepeater /home/orangepi/Downloads
+            sudo cp /usr/local/etc/opendv/ircddbgateway /home/ORANGEPIpi/Downloads
+            sudo cp /usr/local/etc/opendv/dstarrepeater /home/ORANGEPIpi/Downloads
 
-            cd /home/orangepi
-            sudo cp info_panel_control.ini /home/orangepi/Downloads
+            cd /home/ORANGEPIpi
+            sudo cp info_panel_control.ini /home/ORANGEPIpi/Downloads
 
 #cd /var/www/html/upload/files
-cd /home/orangepi/
+cd /home/ORANGEPIpi/
 tar -zcvf copia.tar.gz Downloads
 cp  copia.tar.gz /var/www/html/upload/files

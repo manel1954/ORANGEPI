@@ -28,12 +28,12 @@ clear
 		                case $ejecutar1 in
 			            [sS]* ) echo ""
 			            echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        cd /home/orangepi/
+                        cd /home/ORANGEPIpi/
                         sudo rm -R YSFClients
                         sleep 3
-                        cd /home/orangepi/
+                        cd /home/ORANGEPIpi/
                         git clone http://github.com/g4klx/YSFClients
-                        cd /home/orangepi/YSFClients/YSFGateway
+                        cd /home/ORANGEPIpi/YSFClients/YSFGateway
                         make clean
                         make
                         clear
@@ -53,7 +53,7 @@ clear
 		    case $ejecutar1 in
 			[sS]* ) echo ""
 			echo "ok >>>>>"
-			cd /home/orangepi/YSFClients/YSFGateway
+			cd /home/ORANGEPIpi/YSFClients/YSFGateway
 			sudo rm YSFHosts.txt
 			sudo wget -O YSFHosts.txt http://register.ysfreflector.de/export_csv.php
 			sleep 3
@@ -73,12 +73,12 @@ clear
 		    case $ejecutar1 in
 			[sS]* ) echo ""
 			echo "ok >>>>>"
-            mate-terminal --geometry=120x30 -x less /home/orangepi/YSFClients/YSFGateway/YSFHosts.txt
+            mate-terminal --geometry=120x30 -x less /home/ORANGEPIpi/YSFClients/YSFGateway/YSFHosts.txt
 
 
 
 
-			#cd /home/orangepi/YSFClients/YSFGateway
+			#cd /home/ORANGEPIpi/YSFClients/YSFGateway
 			#sudo pluma YSFHosts.txt
 			echo "Ok"
 			break;;

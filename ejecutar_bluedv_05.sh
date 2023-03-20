@@ -1,17 +1,17 @@
 #!/bin/bash
-sed -i "6c Exec=sh cerrar_bluedv_05.sh" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "7c Icon=/home/orangepi/ORANGE/BLUEDV_ON.png" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "8c Path=/home/orangepi/ORANGE" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "11c Name[es_ES]=Cerrar BlueDV" /home/orangepi/Desktop/BlueDV.desktop
+sed -i "6c Exec=sh cerrar_bluedv_05.sh" /home/ORANGEPIpi/Desktop/BlueDV.desktop
+sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/BLUEDV_ON.png" /home/ORANGEPIpi/Desktop/BlueDV.desktop
+sed -i "8c Path=/home/ORANGEPIpi/ORANGEPI" /home/ORANGEPIpi/Desktop/BlueDV.desktop
+sed -i "11c Name[es_ES]=Cerrar BlueDV" /home/ORANGEPIpi/Desktop/BlueDV.desktop
 
-sed -i "2c BlueDV=ON" /home/orangepi/status.ini
+sed -i "2c BlueDV=ON" /home/ORANGEPIpi/status.ini
 
-cd /home/orangepi/bluedv
+cd /home/ORANGEPIpi/bluedv
 sudo mono BlueDV.exe
 
-sed -i "6c Exec=sh ejecutar_bluedv_05.sh" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "7c Icon=/home/orangepi/ORANGE/BLUEDV.png" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "8c Path=/home/orangepi/ORANGE" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "11c Name[es_ES]=Abrir BlueDV" /home/orangepi/Desktop/BlueDV.desktop
+sed -i "6c Exec=sh ejecutar_bluedv_05.sh" /home/ORANGEPIpi/Desktop/BlueDV.desktop
+sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/BLUEDV.png" /home/ORANGEPIpi/Desktop/BlueDV.desktop
+sed -i "8c Path=/home/ORANGEPIpi/ORANGEPI" /home/ORANGEPIpi/Desktop/BlueDV.desktop
+sed -i "11c Name[es_ES]=Abrir BlueDV" /home/ORANGEPIpi/Desktop/BlueDV.desktop
 
-sed -i "2c BlueDV=OFF" /home/orangepi/status.ini
+sed -i "2c BlueDV=OFF" /home/ORANGEPIpi/status.ini

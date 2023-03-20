@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /home/orangepi/qt
+cd /home/ORANGEPIpi/qt
 ./qt_notas_version
 
-cd /home/orangepi/ORANGE
+cd /home/ORANGEPIpi/ORANGEPI
 su orangepi -c 'ImagenActualizada.exe'
 #echo "\33[1;32m   ************************************************************************************"
 #echo "   * \33[1;31m                      NOTAS DE LA VERSIÓN 02.07.05\33[1;32m                               *"
@@ -29,7 +29,7 @@ su orangepi -c 'ImagenActualizada.exe'
 #echo "\33[1;31m   Podria dañar algún fichero del sistema y el funcionamiento de la misma."				
 #						
 #
-#						mmdvm=$(awk "NR==22" /home/orangepi/MMDVMHost/Version.h)
+#						mmdvm=$(awk "NR==22" /home/ORANGEPIpi/MMDVMHost/Version.h)
 #						var10=`echo "$mmdvm" | tr -d '[[:space:]]'`
 #						var10=`expr substr $var10 20 12`
 #						echo "\33[1;32m" #color verde

@@ -8,13 +8,13 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-sed -i "6c Exec=sh cerrar_ysf_05.sh" /home/orangepi/Desktop/YSFGateway.desktop
-sed -i "7c Icon=/home/orangepi/ORANGE/YSF_ON.png" /home/orangepi/Desktop/YSFGateway.desktop
-sed -i "11c Name[es_ES]=Cerrar YSF" /home/orangepi/Desktop/YSFGateway.desktop
+sed -i "6c Exec=sh cerrar_ysf_05.sh" /home/ORANGEPIpi/Desktop/YSFGateway.desktop
+sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/YSF_ON.png" /home/ORANGEPIpi/Desktop/YSFGateway.desktop
+sed -i "11c Name[es_ES]=Cerrar YSF" /home/ORANGEPIpi/Desktop/YSFGateway.desktop
 
-sed -i "3c YSF=ON" /home/orangepi/status.ini
+sed -i "3c YSF=ON" /home/ORANGEPIpi/status.ini
 
-cd /home/orangepi/YSFClients/YSFGateway
+cd /home/ORANGEPIpi/YSFClients/YSFGateway
 echo "{$MARRON}"
 clear
 echo "***********************************************************"

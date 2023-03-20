@@ -1,24 +1,24 @@
 #!/bin/bash	                
-                        sh /home/orangepi/ORANGE/ejecutar_ImagenActualizada.sh &
+                        sh /home/ORANGEPIpi/ORANGEPI/ejecutar_ImagenActualizada.sh &
                         git pull 
                         sleep 3
-                        cd /home/orangepi/
+                        cd /home/ORANGEPIpi/
                         clear
-                        cd /home/orangepi/AUTOSTART
+                        cd /home/ORANGEPIpi/AUTOSTART
                         git pull
 
                         sudo usermod -a -G dialout orangepi
                         sudo usermod -a -G uucp orangepi
-                        cd /home/orangepi/
+                        cd /home/ORANGEPIpi/
                         
                         sudo rm -R qt
                         
-                        mkdir /home/orangepi/qt
+                        mkdir /home/ORANGEPIpi/qt
                         
-                        cd /home/orangepi/ORANGE
+                        cd /home/ORANGEPIpi/ORANGEPI
                         
-                        cp qt* /home/orangepi/qt
+                        cp qt* /home/ORANGEPIpi/qt
 
-                        chmod 777 -R /home/orangepi/qt
+                        chmod 777 -R /home/ORANGEPIpi/qt
 
                         

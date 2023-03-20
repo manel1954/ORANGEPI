@@ -4,7 +4,7 @@ Type=Application
 Name=Editar solo FUSION
 Comment=
 Exec=mate-terminal --geometry=80x41 -x sh editar_MMDVMFUSION_05.sh
-Icon=/home/orangepi/ORANGE/editar_bm.png
-Path=/home/orangepi/ORANGE
+Icon=/home/ORANGEPIpi/ORANGEPI/editar_bm.png
+Path=/home/ORANGEPIpi/ORANGEPI
 Terminal=false
 StartupNotify=false
