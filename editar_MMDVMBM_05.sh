@@ -105,7 +105,6 @@ var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMBM.ini;
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMBM.ini)
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
-#pas=`grep -n '\<Password\>' /home/orangepi/MMDVMHost/MMDVMBM.ini`
 pas1=`expr substr $pas 10 30`
 echo "$pas1"
 
@@ -323,14 +322,10 @@ echo "$modu1"
 
 
 
-#238
+
 echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
-OPCION=$(awk "NR==238" /home/orangepi/MMDVMHost/MMDVMBM.ini)
-#OPCION=`expr substr $pas 1 $largo1`
-#OPCION=`expr $OPCION + 1`
-linea33port=$OPCION
-#letra=p
-#linea22port=$OPCION$letra
+#OPCION=$(awk "NR==238" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+#linea33port=$OPCION
 var300port= sed -n 238p  /home/orangepi/MMDVMHost/MMDVMBM.ini;
 
 
@@ -1177,47 +1172,17 @@ done;;
 27) echo ""
 while true
 do
-              read -p 'Estas en DMR+ ? S/N ' actualizar     
-           	 
-                          
+                          read -p 'Estas en DMR+ ? S/N ' actualizar
                           case $actualizar in
 			  [sS]* ) echo ""
-			   read -p 'Intruduce reflector DMR+ al que se conectara (ej:4374) ' opcion
-                          #letra1=c
-                          #linea4=$linea33port$letra1
+			  read -p 'Intruduce reflector DMR+ al que se conectara (ej:4374) ' opcion
                           sed -i "238c Options=StartRef=$opcion;RelinkTime=10;" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
-			  #letra1=c
-                          #linea4=$linea33port$letra1
 			  sed -i "238c #Options=StartRef=4370;RelinkTime=10;" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 esac
 done;;
-#27) echo ""
-#while true
-#do
-#buscar=":"
-#largo=`expr index $rxinv $buscar`
-#echo "Valor  actual del  RXInvert: \33[1;33m${rxinv#*=}\33[1;37m"
-                     #read -p 'Valor óptimo para Motorola=0 para otras=1 : ' rxinv11
-                          #letra=c
-                         #if [ $largo = 3 ]
-                         #then
-                          #linea=`expr substr $rxinv 1 2`
-                          #else
-                          #linea=`expr substr $rxinv 1 3`
-                          #fi
-                          #linea=$linea$letra
-                          #actualizar=S 
-                          #case $actualizar in
-        #[sS]* ) echo ""
-                          #sed -i "$linea RXInvert=$rxinv11" /home/orangepi/MMDVMHost/MMDVMBM.ini
-        #break;;
-        #[nN]* ) echo ""
-        #break;;
-#esac
-#done;;
 28) echo ""
 while true
 do
