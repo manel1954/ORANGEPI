@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Organizar ICONOS
+Comment=
+Icon=/home/orangepi/ORANGE/ICONO_ORGANIZAR.png
+Path=/home/orangepi/ORANGE
+Terminal=false
+Name[es_ES]=Organizar ICONOS
+StartupNotify=false
+Exec=sh colocar_iconos.sh
