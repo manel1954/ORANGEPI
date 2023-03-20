@@ -101,10 +101,27 @@ letra=p
 linea2port=$lineaport$letra
 var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMBM.ini;
 
+
+
+pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+
+
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
-pas=`grep -n '\<Password\>' /home/orangepi/MMDVMHost/MMDVMBM.ini`
+#pas=`grep -n '\<Password\>' /home/orangepi/MMDVMHost/MMDVMBM.ini`
 pas1=`expr substr $pas 5 30`
 echo "$pas1"
+
+
+
+
+
+
+
+
+
+
+
+
 
 echo -n "\33[1;36m  14)\33[0m Modificar TXInvert    - \33[1;33m"
 txinv=`grep -n '\<TXInvert\>' /home/orangepi/MMDVMHost/MMDVMBM.ini`
