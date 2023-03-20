@@ -59,7 +59,7 @@ clear
 
                     HOY=$(date +%Y%m%d)
                     FIJA="const char* VERSION = "\"
-                    PI=":Opi"\"
+                    PI=":LTS"\"
                     HOY1=$HOY$PI
                     PUNTO=";"
                     
@@ -96,11 +96,11 @@ clear
                     #=================================================
 
                     # Rutina solo para el LIBRE ======================
-                    cd /home/orangepi/ORANGEPI
-                    cp MMDVMHostLIBRE /home/orangepi/MMDVMHost
-                    cp MMDVMLIBRE.ini /home/orangepi/MMDVMHost
-                    cd /home/orangepi/MMDVMHost
-                    sudo chmod +x MMDVMHostLIBRE
+                    #cd /home/orangepi/ORANGEPI
+                    #cp MMDVMHostLIBRE /home/orangepi/MMDVMHost
+                    #cp MMDVMLIBRE.ini /home/orangepi/MMDVMHost
+                    #cd /home/orangepi/MMDVMHost
+                    #sudo chmod +x MMDVMHostLIBRE
                     #=================================================
 
                     # Crea los ficheros de Memorias ==================
