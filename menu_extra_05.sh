@@ -183,25 +183,25 @@ clear
                         [sS]* ) echo ""
                         git pull 
                         sleep 3
-                        cd /home/ORANGEPIpi/
+                        cd /home/orangepi/
                         #sudo chmod 777 ORANGE
                         clear
-                        cd /home/ORANGEPIpi/AUTOSTART
+                        cd /home/orangepi/AUTOSTART
                         git pull
 
                         sudo usermod -a -G dialout orangepi
                         sudo usermod -a -G uucp orangepi
-                        cd /home/ORANGEPIpi/
+                        cd /home/orangepi/
                         
                         sudo rm -R qt
                         
-                        mkdir /home/ORANGEPIpi/qt
+                        mkdir /home/orangepi/qt
                         
                         cd /home/orangepi/ORANGEPI
                         
-                        cp qt* /home/ORANGEPIpi/qt
+                        cp qt* /home/orangepi/qt
 
-                        chmod 777 -R /home/ORANGEPIpi/qt
+                        chmod 777 -R /home/orangepi/qt
 			break;;
 			[nN]* ) echo ""
 clear
