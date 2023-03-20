@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
-while true
-do
+#while true
+#do
 clear
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
