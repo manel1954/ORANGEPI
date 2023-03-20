@@ -181,7 +181,7 @@ clear
                         ejecutar1=S
                         case $ejecutar1 in
                         [sS]* ) echo ""                       
-                        cd /home/orangepi/
+                        cd /home/orangepi/ORANGEPI
                         git pull 
                         sleep 3
                         
