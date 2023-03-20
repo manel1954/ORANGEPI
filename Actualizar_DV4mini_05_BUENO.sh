@@ -29,22 +29,22 @@ clear
 		    case $ejecutar1 in
 			[sS]* ) echo ""
 			echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        cd /home/ORANGEPIpi/Downloads
+                        cd /home/orangepi/Downloads
 wget http://112.xreflector.es/Soft_DV4MINI/Linux/Raspberry_/dv_serial
-sudo cp -v /home/ORANGEPIpi/Downloads/dv_serial /home/ORANGEPIpi/dv4mini 
-cd /home/ORANGEPIpi/dv4mini/
+sudo cp -v /home/orangepi/Downloads/dv_serial /home/orangepi/dv4mini 
+cd /home/orangepi/dv4mini/
 sudo chmod 777 dv_serial
-cd /home/ORANGEPIpi/Downloads
-sudo rm -v /home/ORANGEPIpi/Downloads/dv_serial
+cd /home/orangepi/Downloads
+sudo rm -v /home/orangepi/Downloads/dv_serial
 
-sudo cp -v /home/ORANGEPIpi/dv4mini/dv4mini.exe /home/ORANGEPIpi/dv4mini/dv4mini.exe.old
+sudo cp -v /home/orangepi/dv4mini/dv4mini.exe /home/orangepi/dv4mini/dv4mini.exe.old
 wget http://112.xreflector.es/Soft_DV4MINI/Linux/Raspberry_/dv4mini.exe
-sudo cp -v /home/ORANGEPIpi/Downloads/dv4mini.exe /home/ORANGEPIpi/dv4mini/dv4mini.exe
-sudo chmod -R 777 /home/ORANGEPIpi/dv4mini/
-cd /home/ORANGEPIpi/Downloads
-sudo rm -v /home/ORANGEPIpi/Downloads/dv4mini.exe
+sudo cp -v /home/orangepi/Downloads/dv4mini.exe /home/orangepi/dv4mini/dv4mini.exe
+sudo chmod -R 777 /home/orangepi/dv4mini/
+cd /home/orangepi/Downloads
+sudo rm -v /home/orangepi/Downloads/dv4mini.exe
 
-sudo chmod -R 777 /home/ORANGEPIpi/.config/dv4mini/
+sudo chmod -R 777 /home/orangepi/.config/dv4mini/
 
 sudo rm /usr/bin/dv_serial #este lo copio al que daba error                       
 
@@ -67,13 +67,13 @@ clear
 						[sS]* ) echo ""
 						echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
                         cd /home/orangepi/ORANGEPI
-                        cp dv_serial /home/ORANGEPIpi/dv4mini
-                        cp dv4mini.exe /home/ORANGEPIpi/dv4mini
-                        cp xref.ip /home/ORANGEPIpi/dv4mini
+                        cp dv_serial /home/orangepi/dv4mini
+                        cp dv4mini.exe /home/orangepi/dv4mini
+                        cp xref.ip /home/orangepi/dv4mini
                         sudo cp dv_serial /usr/bin/
                         cd /usr/bin/
                         sudo chmod 777 dv_serial
-                        sudo chmod -R 777 /home/ORANGEPIpi/.config/dv4mini/dv4mini/1.0.0.0
+                        sudo chmod -R 777 /home/orangepi/.config/dv4mini/dv4mini/1.0.0.0
                         clear
                         echo "***********************************"
                         echo "*** SE HA ACTUALIZADO CON EXITO ***"
@@ -97,23 +97,23 @@ clear
 		    case $ejecutar1 in
 			[sS]* ) echo ""
 			echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        cd /home/ORANGEPIpi/Downloads
+                        cd /home/orangepi/Downloads
 wget http://112.xreflector.es/Soft_DV4MINI/Linux/Raspberry_/old/dv_serial
-sudo cp -v /home/ORANGEPIpi/Downloads/dv_serial /home/ORANGEPIpi/dv4mini 
-cd /home/ORANGEPIpi/dv4mini/
+sudo cp -v /home/orangepi/Downloads/dv_serial /home/orangepi/dv4mini 
+cd /home/orangepi/dv4mini/
 sudo chmod 777 dv_serial
-cd /home/ORANGEPIpi/Downloads
-sudo rm -v /home/ORANGEPIpi/Downloads/dv_serial 
+cd /home/orangepi/Downloads
+sudo rm -v /home/orangepi/Downloads/dv_serial 
 
 
-cd /home/ORANGEPIpi/Downloads
-sudo cp -v /home/ORANGEPIpi/dv4mini/dv4mini.exe /home/ORANGEPIpi/dv4mini/dv4mini.exe.old
+cd /home/orangepi/Downloads
+sudo cp -v /home/orangepi/dv4mini/dv4mini.exe /home/orangepi/dv4mini/dv4mini.exe.old
 wget http://112.xreflector.es/Soft_DV4MINI/Linux/Raspberry_/old/dv4mini.exe
-sudo cp -v /home/ORANGEPIpi/Downloads/dv4mini.exe /home/ORANGEPIpi/dv4mini/dv4mini.exe
-cd /home/ORANGEPIpi/dv4mini/
+sudo cp -v /home/orangepi/Downloads/dv4mini.exe /home/orangepi/dv4mini/dv4mini.exe
+cd /home/orangepi/dv4mini/
 sudo chmod 777 dv4mini.exe
-cd /home/ORANGEPIpi/Downloads
-sudo rm -v /home/ORANGEPIpi/Downloads/dv4mini.exe
+cd /home/orangepi/Downloads
+sudo rm -v /home/orangepi/Downloads/dv4mini.exe
 
 clear
 		break;;

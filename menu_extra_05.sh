@@ -36,8 +36,8 @@ clear
 		                case $ejecutar1 in
 			            [sS]* ) echo ""
 			            echo ">>>>>>>>> GRABAR NEXTION >>>>>>>>"
-			            #sudo cp -f /home/ORANGEPIpi/MMDVMHost/Nextion_G4KLX/nextion.py /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
-                        #cd /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
+			            #sudo cp -f /home/orangepi/MMDVMHost/Nextion_G4KLX/nextion.py /home/orangepi/MMDVMHost/Nextion_DB2OE
+                        #cd /home/orangepi/MMDVMHost/Nextion_DB2OE
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
                         cd /home/orangepi/ORANGEPI/
@@ -93,8 +93,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> GRABAR NEXTION ORIGINAL >>>>>>>>"
-                        #sudo cp -f /home/ORANGEPIpi/MMDVMHost/Nextion_G4KLX/nextion.py /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
-                        #cd /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
+                        #sudo cp -f /home/orangepi/MMDVMHost/Nextion_G4KLX/nextion.py /home/orangepi/MMDVMHost/Nextion_DB2OE
+                        #cd /home/orangepi/MMDVMHost/Nextion_DB2OE
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
                         cd /home/orangepi/ORANGEPI/
@@ -115,8 +115,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> INSTALANDO ANYDESK >>>>>>>>"
-                        sudo rm -R /home/ORANGEPIpi/.anydesk
-                        cd /home/ORANGEPIpi/Downloads
+                        sudo rm -R /home/orangepi/.anydesk
+                        cd /home/orangepi/Downloads
                         wget http://download.anydesk.com/rpi/anydesk_2.9.4-1_armhf.deb
                         sudo dpkg -i anydesk_2.9.4-1_armhf.deb
                         sudo apt-get -f install

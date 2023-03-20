@@ -51,11 +51,11 @@ clear
                     case $ejecutar1 in
                     [sS]* ) echo ""
                     echo "ok >>>>>"
-                    cd /home/ORANGEPIpi/  
-                    sudo rm -r /home/ORANGEPIpi/MMDVMHost
+                    cd /home/orangepi/  
+                    sudo rm -r /home/orangepi/MMDVMHost
                     git clone https://github.com/g4klx/MMDVMHost
                     #git clone https://github.com/ea3eiz/MMDVMHost
-                    cd /home/ORANGEPIpi/MMDVMHost
+                    cd /home/orangepi/MMDVMHost
 
                     HOY=$(date +%Y%m%d)
                     FIJA="const char* VERSION = "\"
@@ -63,22 +63,22 @@ clear
                     HOY1=$HOY$PI
                     PUNTO=";"
                     
-                    sed -i "22c $FIJA$HOY1$PUNTO" /home/ORANGEPIpi/MMDVMHost/Version.h
-                    sed -i "171c val \/\= 1.0;" /home/ORANGEPIpi/MMDVMHost/Nextion.cpp
+                    sed -i "22c $FIJA$HOY1$PUNTO" /home/orangepi/MMDVMHost/Version.h
+                    sed -i "171c val \/\= 1.0;" /home/orangepi/MMDVMHost/Nextion.cpp
                    
                     #Comprueba si existe el fichero info.ini
-                    if [ -f /home/ORANGEPIpi/Downloads/info.ini ];
+                    if [ -f /home/orangepi/Downloads/info.ini ];
                     then
                     echo ""
                     else
-                    sudo cp /home/orangepi/ORANGEPI/info.ini /home/ORANGEPIpi/Downloads
+                    sudo cp /home/orangepi/ORANGEPI/info.ini /home/orangepi/Downloads
                     fi
                     #===============================================
 
                    
 
                     # Pone la fecha de la versión MMDVMHost en la linea 2 del fichero info.ini
-                    sed -i "2c $HOY" /home/ORANGEPIpi/Downloads/info.ini
+                    sed -i "2c $HOY" /home/orangepi/Downloads/info.ini
                     make clean
                     make
 
@@ -97,9 +97,9 @@ clear
 
                     # Rutina solo para el LIBRE ======================
                     cd /home/orangepi/ORANGEPI
-                    cp MMDVMHostLIBRE /home/ORANGEPIpi/MMDVMHost
-                    cp MMDVMLIBRE.ini /home/ORANGEPIpi/MMDVMHost
-                    cd /home/ORANGEPIpi/MMDVMHost
+                    cp MMDVMHostLIBRE /home/orangepi/MMDVMHost
+                    cp MMDVMLIBRE.ini /home/orangepi/MMDVMHost
+                    cd /home/orangepi/MMDVMHost
                     sudo chmod +x MMDVMHostLIBRE
                     #=================================================
 
@@ -129,7 +129,7 @@ clear
                     
                     #=================================================
 
-                    sudo chmod +x -R /home/ORANGEPIpi/MMDVMHost
+                    sudo chmod +x -R /home/orangepi/MMDVMHost
                     
                     echo""
                     clear
@@ -153,7 +153,7 @@ clear
                     case $ejecutar1 in
                     [sS]* ) echo ""
                     echo "ok >>>>>"
-                    cd /home/ORANGEPIpi/
+                    cd /home/orangepi/
                     sudo rm -r MMDVMHost
                     sudo mv MMDVMHost_anterior MMDVMHost
                     echo""
@@ -183,10 +183,10 @@ clear
                     case $ejecutar1 in
                     [sS]* ) echo ""
                     echo "ok >>>>>"
-                    cd /home/ORANGEPIpi/  
-                    sudo rm -r /home/ORANGEPIpi/MMDVMHost
+                    cd /home/orangepi/  
+                    sudo rm -r /home/orangepi/MMDVMHost
                     git clone https://github.com/g4klx/MMDVMHost
-                    cd /home/ORANGEPIpi/MMDVMHost
+                    cd /home/orangepi/MMDVMHost
 
                     HOY=$(date +%Y%m%d)
                     FIJA="const char* VERSION = "\"
@@ -194,22 +194,22 @@ clear
                     HOY1=$HOY$PI
                     PUNTO=";"
                     
-                    sed -i "22c $FIJA$HOY1$PUNTO" /home/ORANGEPIpi/MMDVMHost/Version.h
-                    #sed -i "145c val \/\= 1.0;" /home/ORANGEPIpi/MMDVMHost/Nextion.cpp
+                    sed -i "22c $FIJA$HOY1$PUNTO" /home/orangepi/MMDVMHost/Version.h
+                    #sed -i "145c val \/\= 1.0;" /home/orangepi/MMDVMHost/Nextion.cpp
                    
                     #Comprueba si existe el fichero info.ini
-                    if [ -f /home/ORANGEPIpi/Downloads/info.ini ];
+                    if [ -f /home/orangepi/Downloads/info.ini ];
                     then
                     echo ""
                     else
-                    sudo cp /home/orangepi/ORANGEPI/info.ini /home/ORANGEPIpi/Downloads
+                    sudo cp /home/orangepi/ORANGEPI/info.ini /home/orangepi/Downloads
                     fi
                     #===============================================
 
                    
 
                     # Pone la fecha de la versión MMDVMHost en la linea 2 del fichero info.ini
-                    sed -i "2c $HOY" /home/ORANGEPIpi/Downloads/info.ini
+                    sed -i "2c $HOY" /home/orangepi/Downloads/info.ini
                     make clean
                     make
 
@@ -228,9 +228,9 @@ clear
 
                     # Rutina solo para el LIBRE ======================
                     cd /home/orangepi/ORANGEPI
-                    cp MMDVMHostLIBRE /home/ORANGEPIpi/MMDVMHost
-                    cp MMDVMLIBRE.ini /home/ORANGEPIpi/MMDVMHost
-                    cd /home/ORANGEPIpi/MMDVMHost
+                    cp MMDVMHostLIBRE /home/orangepi/MMDVMHost
+                    cp MMDVMLIBRE.ini /home/orangepi/MMDVMHost
+                    cd /home/orangepi/MMDVMHost
                     sudo chmod +x MMDVMHostLIBRE
                     #=================================================
 
@@ -260,7 +260,7 @@ clear
                     
                     #=================================================
 
-                    sudo chmod +x -R /home/ORANGEPIpi/MMDVMHost
+                    sudo chmod +x -R /home/orangepi/MMDVMHost
                     
                     echo""
                     clear

@@ -46,8 +46,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 A >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c A" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c A" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -63,8 +63,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 B >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c B" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c B" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -80,8 +80,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 C >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c C" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c C" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -97,8 +97,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 D >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c D" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c D" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -114,8 +114,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 E >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c E" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c E" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -131,8 +131,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 F >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c F" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c F" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -148,8 +148,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 G >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c G" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c G" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -165,8 +165,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 H >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c H" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c H" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -182,8 +182,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 I >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c I" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c I" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -199,8 +199,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 J >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c J" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c J" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -216,8 +216,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 K >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c K" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c K" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -233,8 +233,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 L >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c L" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c L" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -250,8 +250,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 M >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c M" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c M" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -267,8 +267,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 N >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c N" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c N" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -284,8 +284,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 O >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c 0" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c 0" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -301,8 +301,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 P >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c P" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c P" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -318,8 +318,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 Q >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c Q" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c Q" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -335,8 +335,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 R >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c R" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c R" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -352,8 +352,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 S >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c S" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c S" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -370,8 +370,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 T >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c T" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c T" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -387,8 +387,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 U >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c U" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c U" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -404,8 +404,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 V >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c V" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c V" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -421,8 +421,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 W >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c W" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c W" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear
@@ -438,8 +438,8 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> DCS018 Z >>>>>"
-                        sudo sed -i "20c DCS018" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
-                        sudo sed -i "21c Z" /home/ORANGEPIpi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "20c DCS018" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
+                        sudo sed -i "21c Z" /home/orangepi/.config/Microsoft/dvrptr/1.0.0.0/dvrptr_X2a.cfg
                         break;;
                         [nN]* ) echo ""
 clear

@@ -2,12 +2,12 @@
 
 cd /home/orangepi/ORANGEPI
 
-sed -i "6c Exec=sh cerrar_dstarrepeater_05.sh" /home/ORANGEPIpi/Desktop/Dstar_solo.desktop
-sed -i "7c Icon=/home/orangepi/ORANGEPI/REPEATER_ON.png" /home/ORANGEPIpi/Desktop/Dstar_solo.desktop
-sed -i "10c Name[es_ES]=Cerrar D-STAR Repeater" /home/ORANGEPIpi/Desktop/Dstar_solo.desktop
+sed -i "6c Exec=sh cerrar_dstarrepeater_05.sh" /home/orangepi/Desktop/Dstar_solo.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/REPEATER_ON.png" /home/orangepi/Desktop/Dstar_solo.desktop
+sed -i "10c Name[es_ES]=Cerrar D-STAR Repeater" /home/orangepi/Desktop/Dstar_solo.desktop
 
 
-sed -i "9c dstarrepeater=ON" /home/ORANGEPIpi/status.ini	
+sed -i "9c dstarrepeater=ON" /home/orangepi/status.ini	
 
 sudo dstarrepeater
 

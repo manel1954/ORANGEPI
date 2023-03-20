@@ -1,6 +1,6 @@
   #!/bin/bash                                                             
-                                cp -R /home/orangepi/ORANGEPI/Desktop /home/ORANGEPIpi/
-                                sudo chmod +x -R /home/ORANGEPIpi/Desktop
+                                cp -R /home/orangepi/ORANGEPI/Desktop /home/orangepi/
+                                sudo chmod +x -R /home/orangepi/Desktop
                       
                                 echo ">>>>>>>>> RESTAURANDO ICONOS ESCRITORIO <<<<<<<<<"
                                 sleep 3

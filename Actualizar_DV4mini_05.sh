@@ -33,21 +33,21 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        sudo rm -r /home/ORANGEPIpi/$SCRIPTS_version/DV4MINI/
-                        cd /home/ORANGEPIpi/$SCRIPTS_version
+                        sudo rm -r /home/orangepi/$SCRIPTS_version/DV4MINI/
+                        cd /home/orangepi/$SCRIPTS_version
                         git clone http://github.com/ea3eiz/DV4MINI
-                        sudo rm -r /home/ORANGEPIpi/dv4mini
+                        sudo rm -r /home/orangepi/dv4mini
                         sudo rm /usr/bin/dv_serial
-                        sudo mkdir /home/ORANGEPIpi/dv4mini
-                        cd /home/ORANGEPIpi/$SCRIPTS_version/DV4MINI/20190307
-                        sudo cp dv_serial /home/ORANGEPIpi/dv4mini
-                        sudo cp dv4mini.exe /home/ORANGEPIpi/dv4mini
-                        sudo cp xref.ip /home/ORANGEPIpi/dv4mini
-                        sudo cp dv4k.png /home/ORANGEPIpi/dv4mini
+                        sudo mkdir /home/orangepi/dv4mini
+                        cd /home/orangepi/$SCRIPTS_version/DV4MINI/20190307
+                        sudo cp dv_serial /home/orangepi/dv4mini
+                        sudo cp dv4mini.exe /home/orangepi/dv4mini
+                        sudo cp xref.ip /home/orangepi/dv4mini
+                        sudo cp dv4k.png /home/orangepi/dv4mini
                         sudo cp dv_serial /usr/bin/
                         cd /usr/bin/
                         sudo chmod 777 dv_serial
-                        cd /home/ORANGEPIpi/dv4mini
+                        cd /home/orangepi/dv4mini
                         sudo chmod 777 dv_serial
                         clear
                         echo "************************************"
@@ -68,21 +68,21 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        sudo rm -r /home/ORANGEPIpi/$SCRIPTS_version/DV4MINI/
-                        cd /home/ORANGEPIpi/$SCRIPTS_version
+                        sudo rm -r /home/orangepi/$SCRIPTS_version/DV4MINI/
+                        cd /home/orangepi/$SCRIPTS_version
                         git clone http://github.com/ea3eiz/DV4MINI
-                        sudo rm -r /home/ORANGEPIpi/dv4mini
+                        sudo rm -r /home/orangepi/dv4mini
                         sudo rm /usr/bin/dv_serial
-                        sudo mkdir /home/ORANGEPIpi/dv4mini
-                        cd /home/ORANGEPIpi/$SCRIPTS_version/DV4MINI/20190127
-                        sudo cp dv_serial /home/ORANGEPIpi/dv4mini
-                        sudo cp dv4mini.exe /home/ORANGEPIpi/dv4mini
-                        sudo cp xref.ip /home/ORANGEPIpi/dv4mini
-                        sudo cp dv4k.png /home/ORANGEPIpi/dv4mini
+                        sudo mkdir /home/orangepi/dv4mini
+                        cd /home/orangepi/$SCRIPTS_version/DV4MINI/20190127
+                        sudo cp dv_serial /home/orangepi/dv4mini
+                        sudo cp dv4mini.exe /home/orangepi/dv4mini
+                        sudo cp xref.ip /home/orangepi/dv4mini
+                        sudo cp dv4k.png /home/orangepi/dv4mini
                         sudo cp dv_serial /usr/bin/
                         cd /usr/bin/
                         sudo chmod 777 dv_serial
-                        cd /home/ORANGEPIpi/dv4mini
+                        cd /home/orangepi/dv4mini
                         sudo chmod 777 dv_serial
                         clear
                         echo "************************************"
@@ -103,21 +103,21 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        sudo rm -r /home/ORANGEPIpi/$SCRIPTS_version/DV4MINI/
-                        cd /home/ORANGEPIpi/$SCRIPTS_version
+                        sudo rm -r /home/orangepi/$SCRIPTS_version/DV4MINI/
+                        cd /home/orangepi/$SCRIPTS_version
                         git clone http://github.com/ea3eiz/DV4MINI
-                        sudo rm -r /home/ORANGEPIpi/dv4mini
+                        sudo rm -r /home/orangepi/dv4mini
                         sudo rm /usr/bin/dv_serial
-                        sudo mkdir /home/ORANGEPIpi/dv4mini
-                        cd /home/ORANGEPIpi/$SCRIPTS_version/DV4MINI/20170517
-                        sudo cp dv_serial /home/ORANGEPIpi/dv4mini
-                        sudo cp dv4mini.exe /home/ORANGEPIpi/dv4mini
-                        sudo cp xref.ip /home/ORANGEPIpi/dv4mini
-                        sudo cp dv4k.png /home/ORANGEPIpi/dv4mini
+                        sudo mkdir /home/orangepi/dv4mini
+                        cd /home/orangepi/$SCRIPTS_version/DV4MINI/20170517
+                        sudo cp dv_serial /home/orangepi/dv4mini
+                        sudo cp dv4mini.exe /home/orangepi/dv4mini
+                        sudo cp xref.ip /home/orangepi/dv4mini
+                        sudo cp dv4k.png /home/orangepi/dv4mini
                         sudo cp dv_serial /usr/bin/
                         cd /usr/bin/
                         sudo chmod 777 dv_serial
-                        cd /home/ORANGEPIpi/dv4mini
+                        cd /home/orangepi/dv4mini
                         sudo chmod 777 dv_serial
                         clear
                         echo "************************************"
@@ -138,21 +138,21 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        sudo rm -r /home/ORANGEPIpi/$SCRIPTS_version/DV4MINI/
-                        cd /home/ORANGEPIpi/$SCRIPTS_version
+                        sudo rm -r /home/orangepi/$SCRIPTS_version/DV4MINI/
+                        cd /home/orangepi/$SCRIPTS_version
                         git clone http://github.com/ea3eiz/DV4MINI
-                        sudo rm -r /home/ORANGEPIpi/dv4mini
+                        sudo rm -r /home/orangepi/dv4mini
                         sudo rm /usr/bin/dv_serial
-                        sudo mkdir /home/ORANGEPIpi/dv4mini
-                        cd /home/ORANGEPIpi/$SCRIPTS_version/DV4MINI/20190307new
-                        sudo cp dv_serial /home/ORANGEPIpi/dv4mini
-                        sudo cp dv4mini.exe /home/ORANGEPIpi/dv4mini
-                        sudo cp xref.ip /home/ORANGEPIpi/dv4mini
-                        sudo cp dv4k.png /home/ORANGEPIpi/dv4mini
+                        sudo mkdir /home/orangepi/dv4mini
+                        cd /home/orangepi/$SCRIPTS_version/DV4MINI/20190307new
+                        sudo cp dv_serial /home/orangepi/dv4mini
+                        sudo cp dv4mini.exe /home/orangepi/dv4mini
+                        sudo cp xref.ip /home/orangepi/dv4mini
+                        sudo cp dv4k.png /home/orangepi/dv4mini
                         sudo cp dv_serial /usr/bin/
                         cd /usr/bin/
                         sudo chmod 777 dv_serial
-                        cd /home/ORANGEPIpi/dv4mini
+                        cd /home/orangepi/dv4mini
                         sudo chmod 777 dv_serial
                         clear
                         echo "************************************"
