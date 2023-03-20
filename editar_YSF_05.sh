@@ -1,12 +1,19 @@
 ﻿#!/bin/bash
 while true
 do
-
+clear
+ROJO="\033[1;31m"
+VERDE="\033[1;32m"
+BLANCO="\033[1;37m"
+AMARILLO="\033[1;33m"
+CIAN="\033[1;36m"
+GRIS="\033[0m"
+echo "${VERDE}"
 echo "   **************************************************************************"
 echo "                  Script para Modificar YSFGateway.ini"
-
+echo -n "${ROJO}"
 echo "                           by EA3EIZ & EA4AOJ"
-
+echo -n "${VERDE}"
 echo "   **************************************************************************"
 var=`grep -n -m 1 '\<Callsign\>' /home/orangepi/YSFClients/YSFGateway/YSFGateway.ini` # 2:Callsign=EA3EIZ
 var1=`grep -m 1 '\<Callsign\>' /home/orangepi/YSFClients/YSFGateway/YSFGateway.ini` # Callsign=EA3EIZ

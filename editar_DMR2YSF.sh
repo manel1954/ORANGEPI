@@ -76,9 +76,9 @@ letra=p
 linea2port=$lineaport$letra
 var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini;
 
+pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini)
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
-pas=`grep -n '\<Password\>' /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini`
-pas1=`expr substr $pas 5 30`
+pas1=`expr substr $pas 10 30`
 echo "$pas1"
 
 echo -n "\33[1;36m  14)\33[0m Modificar TXInvert    - \33[1;33m"
@@ -273,12 +273,7 @@ modu1=`expr substr $modu 4 30`
 echo "$modu1"
 
 echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
-OPCION=`expr substr $pas 1 $largo1`
-OPCION=`expr $OPCION + 1`
-linea33port=$OPCION
-letra=p
-linea22port=$OPCION$letra
-var300port= sed -n $linea22port  /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini;
+var300port= sed -n 238p  /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini;
 
 echo ""
 echo "\33[1;36m  28)\33[1;33m Abrir fichero MMDVMDMR2YSF.ini para hacer cualquier cambio\33[1;33m"
@@ -593,23 +588,12 @@ done;;
 13) echo ""
 while true
 do
-buscar=":"
-largo=`expr index $pas $buscar`
-echo "   Valor actual del Password: \33[1;33m${pas#*=}\33[1;37m"
+                          echo "   Valor actual del Password: \33[1;33m${pas#*=}\33[1;37m"
            	          read -p '   Introduce el password que corresponda: ' pas1
-                          letra=c
-                          if [ $largo = 3 ]
-                          then
-                          linea=`expr substr $pas 1 2`
-                          else
-                          linea=`expr substr $pas 1 3`
-                          fi
-                          linea=$linea$letra
                           actualizar=S 
                           case $actualizar in
-			              [sS]* ) echo ""
-			              pas1=`echo "$pas1" | tr -d '[[:space:]]'`
-                          sed -i "$linea Password=$pas1" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+			  [sS]* ) echo ""
+                          sed -i "234c Password=$pas1" /home/orangepi/MMDVMHost/MMMMDVMDMR2YSFDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
