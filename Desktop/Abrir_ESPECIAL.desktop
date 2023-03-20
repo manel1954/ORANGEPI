@@ -7,4 +7,4 @@ Exec=mate-terminal -x sh ejecutar_especial.sh.sh
 Icon=/home/orangepi/ORANGEPI/ICONO_ESPECIAL_OFF.png
 Path=/home/orangepi/ORANGEPI
 Terminal=false
-Name[es_ES]=Abrir ESPECIAL
+Name[es_ES]=Abrir    ESPECIAL
