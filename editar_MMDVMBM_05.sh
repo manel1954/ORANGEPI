@@ -317,13 +317,31 @@ modu=`grep -n -m 1 '\<Module\>' /home/orangepi/MMDVMHost/MMDVMBM.ini`
 modu1=`expr substr $modu 4 30`
 echo "$modu1"
 
+
+
+
+
+
+
+#238
 echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
-OPCION=`expr substr $pas 1 $largo1`
-OPCION=`expr $OPCION + 1`
+OPCION=$(awk "NR==238" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+#OPCION=`expr substr $pas 1 $largo1`
+#OPCION=`expr $OPCION + 1`
 linea33port=$OPCION
-letra=p
-linea22port=$OPCION$letra
-var300port= sed -n $linea22port  /home/orangepi/MMDVMHost/MMDVMBM.ini;
+#letra=p
+#linea22port=$OPCION$letra
+var300port= sed -n 238p  /home/orangepi/MMDVMHost/MMDVMBM.ini;
+
+
+
+
+
+
+
+
+
+
 
 echo ""
 echo "\33[1;36m  28)\33[1;33m Abrir fichero MMDVMBM.ini para hacer cualquier cambio\33[1;33m"
@@ -1165,14 +1183,14 @@ do
                           case $actualizar in
 			  [sS]* ) echo ""
 			   read -p 'Intruduce reflector DMR+ al que se conectara (ej:4374) ' opcion
-                          letra1=c
-                          linea4=$linea33port$letra1
-                          sed -i "$linea4 Options=StartRef=$opcion;RelinkTime=10;" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                          #letra1=c
+                          #linea4=$linea33port$letra1
+                          sed -i "238c Options=StartRef=$opcion;RelinkTime=10;" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
-			  letra1=c
-                          linea4=$linea33port$letra1
-			  sed -i "$linea4 #Options=StartRef=4370;RelinkTime=10;" /home/orangepi/MMDVMHost/MMDVMBM.ini
+			  #letra1=c
+                          #linea4=$linea33port$letra1
+			  sed -i "238c #Options=StartRef=4370;RelinkTime=10;" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 esac
 done;;
