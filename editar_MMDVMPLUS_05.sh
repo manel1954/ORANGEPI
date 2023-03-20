@@ -111,10 +111,10 @@ pas=`grep -n '\<Password\>' /home/orangepi/MMDVMHost/MMDVMPLUS.ini`
 pas1=`expr substr $pas 5 30`
 echo "$pas1"
 
-echo -n "\33[1;36m  14)\33[0m Modificar TXInvert    - \33[1;33m"
-txinv=`grep -n '\<TXInvert\>' /home/orangepi/MMDVMHost/MMDVMPLUS.ini`
-txinv1=`expr substr $txinv 4 30`
-echo -n "$txinv1"
+pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMPLUS.ini)
+echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
+pas1=`expr substr $pas 10 30`
+echo "$pas1"
 
 echo -n "\33[1;36m      a)\33[0m D-STAR      - \33[1;33m"
 dstar=`grep -n "\[D-Star\]" /home/orangepi/MMDVMHost/MMDVMPLUS.ini` # devuelve ejem: 74:Enable=1
@@ -308,12 +308,8 @@ modu1=`expr substr $modu 4 30`
 echo "$modu1"
 
 echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
-OPCION=`expr substr $pas 1 $largo1`
-OPCION=`expr $OPCION + 1`
-linea33port=$OPCION
-letra=p
-linea22port=$OPCION$letra
-var300port= sed -n $linea22port  /home/orangepi/MMDVMHost/MMDVMPLUS.ini;
+var300port= sed -n 238p  /home/orangepi/MMDVMHost/MMDVMPLUS.ini;
+
 
 echo ""
 echo "\33[1;36m  28)\33[1;33m Abrir fichero MMDVMPLUS.ini para hacer cualquier cambio\33[1;33m"
@@ -635,26 +631,15 @@ done;;
 13) echo ""
 while true
 do
-buscar=":"
-largo=`expr index $pas $buscar`
-echo "   Valor actual del Password: \33[1;33m${pas#*=}\33[1;37m"
-                      read -p '   Introduce el password que corresponda: ' pas1
-                          letra=c
-                          if [ $largo = 3 ]
-                          then
-                          linea=`expr substr $pas 1 2`
-                          else
-                          linea=`expr substr $pas 1 3`
-                          fi
-                          linea=$linea$letra
+                          echo "   Valor actual del Password: \33[1;33m${pas#*=}\33[1;37m"
+           	          read -p '   Introduce el password que corresponda: ' pas1
                           actualizar=S 
                           case $actualizar in
-                    [sS]* ) echo ""
-                    pas1=`echo "$pas1" | tr -d '[[:space:]]'`
-                          sed -i "$linea Password=$pas1" /home/orangepi/MMDVMHost/MMDVMPLUS.ini
-        break;;
-        [nN]* ) echo ""
-        break;;
+			  [sS]* ) echo ""
+                          sed -i "234c Password=$pas1" /home/orangepi/MMDVMHost/MMDVMPLUS.ini
+			  break;;
+			  [nN]* ) echo ""
+			  break;;
 esac
 done;;
 14) echo ""
