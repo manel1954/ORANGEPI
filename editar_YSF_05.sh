@@ -1,4 +1,6 @@
 ﻿#!/bin/bash
+while true
+do
 
 echo "   **************************************************************************"
 echo "                  Script para Modificar YSFGateway.ini"
