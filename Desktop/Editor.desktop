@@ -8,4 +8,4 @@ Path=/home/orangepi/qt
 Terminal=false
 Name[es_ES]=Editor GENERAL
 StartupNotify=false
-Exec=./editor_desktop
+Exec=./qt_editor_general
