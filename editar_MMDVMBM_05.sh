@@ -104,8 +104,6 @@ var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMBM.ini;
 
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMBM.ini)
-
-
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
 #pas=`grep -n '\<Password\>' /home/orangepi/MMDVMHost/MMDVMBM.ini`
 pas1=`expr substr $pas 10 30`
@@ -622,23 +620,23 @@ done;;
 13) echo ""
 while true
 do
-buscar=":"
-largo=`expr index $pas $buscar`
+#buscar=":"
+#largo=`expr index $pas $buscar`
 echo "   Valor actual del Password: \33[1;33m${pas#*=}\33[1;37m"
            	          read -p '   Introduce el password que corresponda: ' pas1
-                          letra=c
-                          if [ $largo = 3 ]
-                          then
-                          linea=`expr substr $pas 1 2`
-                          else
-                          linea=`expr substr $pas 1 3`
-                          fi
-                          linea=$linea$letra
+                          #letra=c
+                          #if [ $largo = 3 ]
+                          #then
+                          #linea=`expr substr $pas 1 2`
+                          #else
+                          #linea=`expr substr $pas 1 3`
+                          #fi
+                          #linea=$linea$letra
                           actualizar=S 
                           case $actualizar in
 			              [sS]* ) echo ""
-			              pas1=`echo "$pas1" | tr -d '[[:space:]]'`
-                          sed -i "$linea Password=$pas1" /home/orangepi/MMDVMHost/MMDVMBM.ini
+			              #pas1=`echo "$pas1" | tr -d '[[:space:]]'`
+                          sed -i "234c Password=$pas1" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
