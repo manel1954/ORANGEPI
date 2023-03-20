@@ -14,7 +14,7 @@ AMARILLO="\033[1;33m"
                         echo ""
                         else
                         echo ">>>>>>>>> COPIANDO FICHERO TODOS_LOS_INIS.ini >>>>>>>>"
-                        cp /home/ORANGEPIpi/ORANGEPI/TODOS_LOS_INIS.ini /home/ORANGEPIpi/MMDVMHost
+                        cp /home/orangepi/ORANGEPI/TODOS_LOS_INIS.ini /home/ORANGEPIpi/MMDVMHost
                         fi
 echo "${VERDE}"
 echo "****************************************************************************"

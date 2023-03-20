@@ -9,7 +9,7 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
 sed -i "6 cExec=sh cerrar_mmdvm_05.sh" /home/ORANGEPIpi/Desktop/MMDVM.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/MMDVM_ON.png" /home/ORANGEPIpi/Desktop/MMDVM.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/MMDVM_ON.png" /home/ORANGEPIpi/Desktop/MMDVM.desktop
 sed -i "4c Name[es_ES]=Cerrar Radio" /home/ORANGEPIpi/Desktop/MMDVM.desktop
 
 sed -i "5c MMDVM=ON" /home/ORANGEPIpi/status.ini
@@ -26,7 +26,7 @@ echo "***********************************************"
 sudo ./MMDVMRADIO MMDVM.ini
 
 sed -i "6c Exec=mate-terminal --geometry 104x16+1151+880 --title=RADIO -x sh ejecutar_mmdvm_05.sh" /home/ORANGEPIpi/Desktop/MMDVM.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/MMDVM.png" /home/ORANGEPIpi/Desktop/MMDVM.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/MMDVM.png" /home/ORANGEPIpi/Desktop/MMDVM.desktop
 sed -i "4c Name[es_ES]=Abrir Radio" /home/ORANGEPIpi/Desktop/MMDVM.desktop
 
 sed -i "5c MMDVM=OFF" /home/ORANGEPIpi/status.ini

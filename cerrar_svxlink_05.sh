@@ -2,7 +2,7 @@
 
 sudo killall svxlink
 sed -i "6c Exec=mate-terminal --geometry 74x23+696+50 --title=SVXLINK -x sh ejecutar_svxlink_05.sh" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/ECHOLINK.png" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/ECHOLINK.png" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
 sed -i "4c Name[es_ES]=Abrir SVXLINK" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
 
 sed -i "8c SVXLINK=OFF" /home/ORANGEPIpi/status.ini

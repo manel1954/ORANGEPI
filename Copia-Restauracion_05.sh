@@ -43,7 +43,7 @@ clear
             then
             echo ""
             else
-            sudo cp /home/ORANGEPIpi/ORANGEPI/info.ini /home/ORANGEPIpi
+            sudo cp /home/orangepi/ORANGEPI/info.ini /home/ORANGEPIpi
             fi
             #===============================================
 

@@ -4,7 +4,7 @@ Type=Application
 Name=Editar ESPECIAL
 Comment=
 Exec=mate-terminal --geometry=80x47 -x sh editar_especial.sh
-Icon=/home/ORANGEPIpi/ORANGEPI/EDITAR_LIBRE.png
-Path=/home/ORANGEPIpi/ORANGEPI
+Icon=/home/orangepi/ORANGEPI/EDITAR_LIBRE.png
+Path=/home/orangepi/ORANGEPI
 Terminal=false
 StartupNotify=false

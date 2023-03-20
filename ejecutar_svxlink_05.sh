@@ -9,7 +9,7 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
 sed -i "6c Exec=sh cerrar_svxlink_05.sh" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/SVXLINK_ON.png" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/SVXLINK_ON.png" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
 sed -i "4c Name[es_ES]=Cerrar SVXLINK" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
 
 sed -i "8c SVXLINK=ON" /home/ORANGEPIpi/status.ini
@@ -18,5 +18,5 @@ echo "{$CIAN}"
 sudo svxlink
 
 sed -i "6c Exec=mate-terminal --geometry 74x23+696+50 --title=SVXLINK -x sh ejecutar_svxlink_05.sh" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/DMRPLUS_EDITOR.png" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/DMRPLUS_EDITOR.png" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop
 sed -i "4c Name[es_ES]=Abrir SVXLINK" /home/ORANGEPIpi/Desktop/Abrir_SVXLink.desktop

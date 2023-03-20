@@ -71,7 +71,7 @@ clear
                     then
                     echo ""
                     else
-                    sudo cp /home/ORANGEPIpi/ORANGEPI/info.ini /home/ORANGEPIpi/Downloads
+                    sudo cp /home/orangepi/ORANGEPI/info.ini /home/ORANGEPIpi/Downloads
                     fi
                     #===============================================
 
@@ -96,7 +96,7 @@ clear
                     #=================================================
 
                     # Rutina solo para el LIBRE ======================
-                    cd /home/ORANGEPIpi/ORANGEPI
+                    cd /home/orangepi/ORANGEPI
                     cp MMDVMHostLIBRE /home/ORANGEPIpi/MMDVMHost
                     cp MMDVMLIBRE.ini /home/ORANGEPIpi/MMDVMHost
                     cd /home/ORANGEPIpi/MMDVMHost
@@ -202,7 +202,7 @@ clear
                     then
                     echo ""
                     else
-                    sudo cp /home/ORANGEPIpi/ORANGEPI/info.ini /home/ORANGEPIpi/Downloads
+                    sudo cp /home/orangepi/ORANGEPI/info.ini /home/ORANGEPIpi/Downloads
                     fi
                     #===============================================
 
@@ -227,7 +227,7 @@ clear
                     #=================================================
 
                     # Rutina solo para el LIBRE ======================
-                    cd /home/ORANGEPIpi/ORANGEPI
+                    cd /home/orangepi/ORANGEPI
                     cp MMDVMHostLIBRE /home/ORANGEPIpi/MMDVMHost
                     cp MMDVMLIBRE.ini /home/ORANGEPIpi/MMDVMHost
                     cd /home/ORANGEPIpi/MMDVMHost

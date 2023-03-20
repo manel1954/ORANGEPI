@@ -1,6 +1,6 @@
 #!/bin/bash
 sed -i "6c Exec=sh cerrar_plus_05.sh" /home/ORANGEPIpi/Desktop/DMRPLUS.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/DMRPLUS_ON.png" /home/ORANGEPIpi/Desktop/DMRPLUS.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/DMRPLUS_ON.png" /home/ORANGEPIpi/Desktop/DMRPLUS.desktop
 sed -i "10c Name[es_ES]=Cerrar DMR+" /home/ORANGEPIpi/Desktop/DMRPLUS.desktop
 
 sed -i "6c MMDVMPLUS=ON" /home/ORANGEPIpi/status.ini
@@ -17,7 +17,7 @@ echo "\33[1;37m"
 sudo ./MMDVMPLUS MMDVMPLUS.ini
  
 sed -i "6c Exec=mate-terminal --geometry 105x16+22+880 --title=DMR+ -x sh ejecutar_plus_05.sh" /home/ORANGEPIpi/Desktop/DMRPLUS.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/ICONO_DMRPLUS.png" /home/ORANGEPIpi/Desktop/DMRPLUS.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/ICONO_DMRPLUS.png" /home/ORANGEPIpi/Desktop/DMRPLUS.desktop
 sed -i "10c Name[es_ES]=Abrir DMR+" /home/ORANGEPIpi/Desktop/DMRPLUS.desktop
 
 sed -i "6c MMDVMPLUS=OFF" /home/ORANGEPIpi/status.ini

@@ -1081,9 +1081,9 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> RESTABLECIENDO EL AUTOARRANQUE POR DEFECTO/home/ORANGEPIpi/   >>>>>"
-                        cd /home/ORANGEPIpi/ORANGEPI
+                        cd /home/orangepi/ORANGEPI
                         git pull
-                        cp -f /home/ORANGEPIpi/ORANGEPI/autoarranque.ini /home/ORANGEPIpi/
+                        cp -f /home/orangepi/ORANGEPI/autoarranque.ini /home/ORANGEPIpi/
                         exit;
                         break;;
                         [nN]* ) echo ""

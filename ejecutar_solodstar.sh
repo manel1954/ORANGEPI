@@ -7,7 +7,7 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 sed -i "6c Exec=sudo sh cerrar_solodstar.sh" /home/ORANGEPIpi/Desktop/AbrirsoloDstar.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/SOLO_D-STAR_ON.png" /home/ORANGEPIpi/Desktop/AbrirsoloDstar.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/SOLO_D-STAR_ON.png" /home/ORANGEPIpi/Desktop/AbrirsoloDstar.desktop
 sed -i "11c Name[es_ES]=Cerrar solo D-STAR" /home/ORANGEPIpi/Desktop/AbrirsoloDstar.desktop
 
 sed -i "13c SOLODSTAR=ON" /home/ORANGEPIpi/status.ini
@@ -19,7 +19,7 @@ sudo ./MMDVMDSTAR MMDVMDSTAR.ini &
 ircddbgateway -gui
 
 sed -i "6c Exec=mate-terminal --geometry 104x16+1151+880 --title=SOLODSTAR -x sh ejecutar_solodstar.sh" /home/ORANGEPIpi/Desktop/AbrirsoloDstar.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/SOLO_D-STAR.png" /home/ORANGEPIpi/Desktop/AbrirsoloDstar.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/SOLO_D-STAR.png" /home/ORANGEPIpi/Desktop/AbrirsoloDstar.desktop
 sed -i "11c Name[es_ES]=Abrir solo D-STAR" /home/ORANGEPIpi/Desktop/AbrirsoloDstar.desktop
 sed -i "13c SOLODSTAR=OFF" /home/ORANGEPIpi/status.ini
 

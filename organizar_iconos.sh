@@ -1,5 +1,5 @@
   #!/bin/bash                                                             
-                                cp -R /home/ORANGEPIpi/ORANGEPI/Desktop /home/ORANGEPIpi/
+                                cp -R /home/orangepi/ORANGEPI/Desktop /home/ORANGEPIpi/
                                 sudo chmod +x -R /home/ORANGEPIpi/Desktop
                       
                                 echo ">>>>>>>>> RESTAURANDO ICONOS ESCRITORIO <<<<<<<<<"

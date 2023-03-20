@@ -40,7 +40,7 @@ clear
                         #cd /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
-                        cd /home/ORANGEPIpi/ORANGEPI/
+                        cd /home/orangepi/ORANGEPI/
                         sudo sh grabar_nextion_05.sh
                         exit;
 		                break;;
@@ -97,7 +97,7 @@ clear
                         #cd /home/ORANGEPIpi/MMDVMHost/Nextion_DB2OE
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
-                        cd /home/ORANGEPIpi/ORANGEPI/
+                        cd /home/orangepi/ORANGEPI/
                         sudo sh menu_dcs018_06.sh
                         exit;
                         break;;
@@ -141,7 +141,7 @@ clear
                                 [sS]* ) echo ""
 
                                 #Coloca icono Abrir AMBE SERVER en el escritorio
-                                cp -R /home/ORANGEPIpi/ORANGEPI/Desktop /home/ORANGEPIpi/
+                                cp -R /home/orangepi/ORANGEPI/Desktop /home/ORANGEPIpi/
                                 sudo chmod +x -R /home/ORANGEPIpi/Desktop
                       
                                 echo ">>>>>>>>> RESTAURANDO ICONOS ESCRITORIO <<<<<<<<<"
@@ -197,7 +197,7 @@ clear
                         
                         mkdir /home/ORANGEPIpi/qt
                         
-                        cd /home/ORANGEPIpi/ORANGEPI
+                        cd /home/orangepi/ORANGEPI
                         
                         cp qt* /home/ORANGEPIpi/qt
 

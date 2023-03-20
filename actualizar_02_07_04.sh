@@ -2,7 +2,7 @@
 
 #Quita todos los iconos verdes que se quedan al cerrar la imagen
 sed -i "6c Exec=mate-terminal -x sh ejecutar_bm_05.sh" /home/ORANGEPIpi/Desktop/BM.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/DMR.png" /home/ORANGEPIpi/Desktop/BM.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/DMR.png" /home/ORANGEPIpi/Desktop/BM.desktop
 sed -i "10c Name[es_ES]=Abrir BM" /home/ORANGEPIpi/Desktop/BM.desktop
 
 #pone todos los status de inicio en OFF
@@ -23,7 +23,7 @@ sed -i "14c YSF2DMR=OFF" /home/ORANGEPIpi/status.ini
 
 sleep 10
 
-cd /home/ORANGEPIpi/ORANGEPI/
+cd /home/orangepi/ORANGEPI/
 git pull
 
 # pone la hora al sistema a quien le falle la del armbian

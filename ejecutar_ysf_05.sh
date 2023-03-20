@@ -9,7 +9,7 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
 sed -i "6c Exec=sh cerrar_ysf_05.sh" /home/ORANGEPIpi/Desktop/YSFGateway.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/YSF_ON.png" /home/ORANGEPIpi/Desktop/YSFGateway.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/YSF_ON.png" /home/ORANGEPIpi/Desktop/YSFGateway.desktop
 sed -i "11c Name[es_ES]=Cerrar YSF" /home/ORANGEPIpi/Desktop/YSFGateway.desktop
 
 sed -i "3c YSF=ON" /home/ORANGEPIpi/status.ini

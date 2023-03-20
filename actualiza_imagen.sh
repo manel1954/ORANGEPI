@@ -1,5 +1,5 @@
 #!/bin/bash	                
-                        sh /home/ORANGEPIpi/ORANGEPI/ejecutar_ImagenActualizada.sh &
+                        sh /home/orangepi/ORANGEPI/ejecutar_ImagenActualizada.sh &
                         git pull 
                         sleep 3
                         cd /home/ORANGEPIpi/
@@ -15,7 +15,7 @@
                         
                         mkdir /home/ORANGEPIpi/qt
                         
-                        cd /home/ORANGEPIpi/ORANGEPI
+                        cd /home/orangepi/ORANGEPI
                         
                         cp qt* /home/ORANGEPIpi/qt
 

@@ -66,7 +66,7 @@ clear
 		    			case $ejecutar1 in
 						[sS]* ) echo ""
 						echo ">>>>>>>>> ACTUALIZANDO >>>>>>>>"
-                        cd /home/ORANGEPIpi/ORANGEPI
+                        cd /home/orangepi/ORANGEPI
                         cp dv_serial /home/ORANGEPIpi/dv4mini
                         cp dv4mini.exe /home/ORANGEPIpi/dv4mini
                         cp xref.ip /home/ORANGEPIpi/dv4mini

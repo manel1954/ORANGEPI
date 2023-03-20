@@ -4,8 +4,8 @@ Type=Application
 Name=CopiarRestaurar
 Comment=
 Exec=mate-terminal --geometry=80x30 -x sh Copia-Restauracion_05.sh
-Icon=/home/ORANGEPIpi/ORANGEPI/ACTUALIZA_BD.png
-Path=/home/ORANGEPIpi/ORANGEPI
+Icon=/home/orangepi/ORANGEPI/ACTUALIZA_BD.png
+Path=/home/orangepi/ORANGEPI
 Terminal=false
 StartupNotify=false
 Name[es_ES]=Copiar Restaurar

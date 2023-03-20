@@ -4,8 +4,8 @@ Type=Application
 Name=ActualizarYSF
 Comment=
 Exec=mate-terminal --geometry=80x47 -x sh actualizar_YSF_05.sh
-Icon=/home/ORANGEPIpi/ORANGEPI/ACTUALIZAR_BD.png
-Path=/home/ORANGEPIpi/ORANGEPI
+Icon=/home/orangepi/ORANGEPI/ACTUALIZAR_BD.png
+Path=/home/orangepi/ORANGEPI
 Terminal=false
 StartupNotify=false
 Name[es_ES]=Actualizar YSF

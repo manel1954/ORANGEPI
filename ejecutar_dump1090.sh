@@ -1,6 +1,6 @@
 #!/bin/bash
 sed -i "6c Exec=sh cerrar_dump1090.sh" /home/ORANGEPIpi/Desktop/dump1090.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/ICONO_AVION_ON.png" /home/ORANGEPIpi/Desktop/dump1090.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/ICONO_AVION_ON.png" /home/ORANGEPIpi/Desktop/dump1090.desktop
 sed -i "10c Name[es_ES]=Cerrar Dump1090" /home/ORANGEPIpi/Desktop/dump1090.desktop
 
 stick=$(awk "NR==40" /home/ORANGEPIpi/status.ini)
@@ -20,5 +20,5 @@ xterm -geometry 88x51+22+0 -bg black -fg green -fa ‘verdana’ -fs 9x -T DUMP1
 fi
 
 sed -i "6c Exec=sh ejecutar_dump1090.sh" /home/ORANGEPIpi/Desktop/dump1090.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/ICONO_AVION_OFF.png" /home/ORANGEPIpi/Desktop/dump1090.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/ICONO_AVION_OFF.png" /home/ORANGEPIpi/Desktop/dump1090.desktop
 sed -i "10c Name[es_ES]=Abrir Dump1090" /home/ORANGEPIpi/Desktop/dump1090.desktop

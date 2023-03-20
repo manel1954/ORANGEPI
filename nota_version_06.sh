@@ -2,7 +2,7 @@
 cd /home/ORANGEPIpi/qt
 ./qt_notas_version
 
-cd /home/ORANGEPIpi/ORANGEPI
+cd /home/orangepi/ORANGEPI
 su orangepi -c 'ImagenActualizada.exe'
 #echo "\33[1;32m   ************************************************************************************"
 #echo "   * \33[1;31m                      NOTAS DE LA VERSIÓN 02.07.05\33[1;32m                               *"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sed -i "6c Exec=mate-terminal -x sh cerrar_YSF2DMR.sh" /home/ORANGEPIpi/Desktop/Abrir_YSF2DMR.desktop
-sed -i "7c Icon=/home/ORANGEPIpi/ORANGEPI/YSF2DMR_ON.png" /home/ORANGEPIpi/Desktop/Abrir_YSF2DMR.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/YSF2DMR_ON.png" /home/ORANGEPIpi/Desktop/Abrir_YSF2DMR.desktop
 sed -i "10c Name[es_ES]=Cerrar YSF2DMR" /home/ORANGEPIpi/Desktop/Abrir_YSF2DMR.desktop
 
 
