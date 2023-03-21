@@ -187,8 +187,8 @@ clear
                         
                         #sudo chmod 777 ORANGE
                         clear
-                        cd /home/orangepi/AUTOSTART
-                        git pull
+                        #cd /home/orangepi/AUTOSTART
+                        #git pull
 
                         sudo usermod -a -G dialout orangepi
                         sudo usermod -a -G uucp orangepi
