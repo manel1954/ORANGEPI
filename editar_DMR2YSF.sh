@@ -43,7 +43,7 @@ echo "\33[1;36m   8)\33[0m Utilizar puerto USB (ttyACM1)\33[1;33m"
 echo "\33[1;36m   9)\33[0m Utilizar puerto USB (ttyUSB0)\33[1;33m"
 echo -n "                            - "
 
-mode=`grep -n -m 1 "^Port=" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini`
+mode=`grep -n -m 1 "^UARTPort=" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
 caracteres_linea=`expr $caracteres - 1`
