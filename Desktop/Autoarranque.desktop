@@ -4,7 +4,7 @@ Type=Application
 Name=Autoarranque
 Comment=
 Exec=mate-terminal --geometry=80x48 -x sh menu_autoarranque_05.sh
-Icon=/home/orangepi/ORANGEPI/TRANSPARENTE.png
+Icon=/home/orangepi/ORANGEPI/AUTOARRANQUE.png
 Path=/home/orangepi/ORANGEPI
 Terminal=false
 StartupNotify=false
