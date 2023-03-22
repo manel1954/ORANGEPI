@@ -75,7 +75,7 @@ echo "\33[1;31m"
 fi
 bluedv=`grep "MMDVMPLUS" /home/orangepi/autoarranque.ini`
 
-echo -n "\33[1;36m   107)\33[1;37m  Quitar LIBRE del autoarranque         - "
+echo -n "\33[1;36m   107)\33[1;37m  Quitar ESPECIAL del autoarranque      - "
 MMDVMLIBRE=`grep "MMDVMLIBRE" /home/orangepi/autoarranque.ini`
 MMDVMLIBRE=`expr substr $MMDVMLIBRE 12 3`
 if [ $MMDVMLIBRE = "ON" ]
@@ -313,7 +313,7 @@ echo "\33[1;31m"
 fi
 bluedv=`grep "MMDVMPLUS" /home/orangepi/autoarranque.ini`
 
-echo -n "\33[1;36m   207)\33[1;33m  Poner LIBRE en autoarranque           - "
+echo -n "\33[1;36m   207)\33[1;33m  Poner ESPECIAL en autoarranque        - "
 MMDVMLIBRE=`grep "MMDVMLIBRE" /home/orangepi/autoarranque.ini`
 MMDVMLIBRE=`expr substr $MMDVMLIBRE 12 3`
 if [ $MMDVMLIBRE = "OFF" ]
