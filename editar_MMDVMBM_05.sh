@@ -560,7 +560,7 @@ while true
 do
 
                         # Modificacion
-                        read -p '   Introduce el RemoteAddress que corresponda: ' remoteddress
+                        read -p '   Introduce el RemoteAddress que corresponda: ' remoteaddress
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
