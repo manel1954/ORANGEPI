@@ -85,7 +85,7 @@ echo "$remoteaddress"
 #modificacion
 echo -n "\33[1;36m  12)\33[0m Modificar Puerto      - \33[1;33m"
 remoteport1=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVMBM.ini)
-echo "remoteport1"
+echo "$remoteport1"
 
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMBM.ini)
@@ -560,7 +560,7 @@ while true
 do
 
                         # Modificacion
-                        read -p '   Introduce el RemoteAddress port que corresponda: ' remotaddress
+                        read -p '   Introduce el RemoteAddress que corresponda: ' remoteddress
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
