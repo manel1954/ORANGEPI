@@ -68,12 +68,12 @@ echo "\33[1;36m   8)\33[0m Utilizar puerto USB (ttyACM1)\33[1;33m"
 echo "\33[1;36m   9)\33[0m Utilizar puerto USB (ttyUSB0)\33[1;33m"
 echo -n "                            - "
 
-mode=`grep -n -m 1 "^UARTPort=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
-buscar=":"
-caracteres=`expr index $mode $buscar`
-caracteres_linea=`expr $caracteres - 1`
-numero_linea_port=`expr substr $mode 1 $caracteres_linea`
-mode=$(awk "NR==$numero_linea_port" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+#mode=`grep -n -m 1 "^UARTPort=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
+#buscar=":"
+#caracteres=`expr index $mode $buscar`
+#caracteres_linea=`expr $caracteres - 1`
+#numero_linea_port=`expr substr $mode 1 $caracteres_linea`
+mode=$(awk "NR==51" /home/orangepi/MMDVMHost/MMDVMBM.ini)
 echo "$mode"
 
 echo -n "\33[1;36m  10)\33[0m Modificar ID          - \33[1;33m"
@@ -513,7 +513,7 @@ do
 			                    [sS]* ) echo ""
                           letrac=c
                           numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                          sed -i "sed -i 51c UARTPort=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -527,7 +527,7 @@ do
 			                    [sS]* ) echo ""
                           letrac=c
                           numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                          sed -i "51c UARTPort=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -541,7 +541,7 @@ do
 			                    [sS]* ) echo ""
                           letrac=c
                           numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                          sed -i "51c UARTPort=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -556,7 +556,7 @@ do
 			                    [sS]* ) echo ""
                           letrac=c
                           numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                          sed -i "51c UARTPort=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
