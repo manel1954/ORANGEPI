@@ -68,11 +68,7 @@ echo "\33[1;36m   8)\33[0m Utilizar puerto USB (ttyACM1)\33[1;33m"
 echo "\33[1;36m   9)\33[0m Utilizar puerto USB (ttyUSB0)\33[1;33m"
 echo -n "                            - "
 
-#mode=`grep -n -m 1 "^UARTPort=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
-#buscar=":"
-#caracteres=`expr index $mode $buscar`
-#caracteres_linea=`expr $caracteres - 1`
-#numero_linea_port=`expr substr $mode 1 $caracteres_linea`
+# Modificacion
 mode=$(awk "NR==51" /home/orangepi/MMDVMHost/MMDVMBM.ini)
 echo "$mode"
 
@@ -81,48 +77,20 @@ idd=`grep -n "Id=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
 idd1=`expr substr $idd 3 30`
 echo "$idd1"
 
+#modificacion
 echo -n "\33[1;36m  11)\33[0m Modificar Address     - \33[1;33m"
-master=`grep -n -m 1 "^RemoteAddress=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
-buscar=":"
-largo=`expr index $master $buscar`
-largo=`expr $largo + 1`
-largo1=`expr $largo - 2`
-master1=`expr substr $master $largo 40`
-largo=`expr substr $master 1 $largo1`
-letra=c            
-linea_master=$largo$letra
-echo "$master1"
+master=$(awk "NR==232" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+echo "$master"
 
+#modificacion
 echo -n "\33[1;36m  12)\33[0m Modificar Puerto      - \33[1;33m"
-lineaport=`expr substr $master 1 $largo1`
-lineaport=`expr $lineaport + 1`
-linea3port=$lineaport
-letra=p
-linea2port=$lineaport$letra
-var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMBM.ini;
-
-
-
-
-
-
+uartport=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+uartport= sed -n 233p  /home/orangepi/MMDVMHost/MMDVMBM.ini;
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMBM.ini)
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
 pas1=`expr substr $pas 10 30`
 echo "$pas1"
-
-
-
-
-
-
-
-
-
-
-
-
 
 echo -n "\33[1;36m  14)\33[0m Modificar TXInvert    - \33[1;33m"
 txinv=`grep -n '\<TXInvert\>' /home/orangepi/MMDVMHost/MMDVMBM.ini`
