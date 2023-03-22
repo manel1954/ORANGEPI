@@ -560,7 +560,8 @@ while true
 do
 
                         # Modificacion
-                        read -p '   Introduce el RemoteAddress que corresponda: ' remoteaddress
+                        echo "Valor actual del Master: \33[1;33m${remoteaddress#*=}\33[1;37m"
+                        read -p 'Brandmeister=master.spain-dmr.es / DMR+=eamaster04.xreflector.es: ' remoteaddress
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
