@@ -69,8 +69,8 @@ echo "\33[1;36m   9)\33[0m Utilizar puerto USB (ttyUSB0)\33[1;33m"
 echo -n "                            - "
 
 # Modificacion
-mode=$(awk "NR==51" /home/orangepi/MMDVMHost/MMDVMBM.ini)
-echo "$mode"
+modeport=$(awk "NR==51" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+echo "$modeport"
 
 echo -n "\33[1;36m  10)\33[0m Modificar ID          - \33[1;33m"
 idd=`grep -n "Id=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
@@ -481,7 +481,7 @@ do
                           actualizar=S 
                           case $actualizar in
 			  [sS]* ) echo ""
-                          sed -i "sed -i 51c UARTPort=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                          sed -i "51c UARTPort=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
