@@ -3,9 +3,9 @@ Version=1.0
 Type=Application
 Name=Autoarranque
 Comment=
-Exec=mate-terminal --geometry=80x48 -x sh menu_autoarranque_05.sh
+Exec=sh ejecutar_autoarranque.sh
 Icon=/home/orangepi/ORANGEPI/AUTOARRANQUE.png
-Path=/home/orangepi/ORANGEPI
 Terminal=false
 StartupNotify=false
-Name[es_ES]=Auto arranque
+Name[es_ES]=Abrir AUTOARRANQUE
+Path=/home/orangepi/ORANGEPI
