@@ -79,13 +79,13 @@ echo "$idd1"
 
 #modificacion
 echo -n "\33[1;36m  11)\33[0m Modificar Address     - \33[1;33m"
-master=$(awk "NR==232" /home/orangepi/MMDVMHost/MMDVMBM.ini)
-echo "$master"
+remoteaddress=$(awk "NR==232" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+echo "$remoteaddress"
 
 #modificacion
 echo -n "\33[1;36m  12)\33[0m Modificar Puerto      - \33[1;33m"
-uartport=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVMBM.ini)
-uartport= sed -n 233p  /home/orangepi/MMDVMHost/MMDVMBM.ini;
+remoteport=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+remoteport= sed -n 233p  /home/orangepi/MMDVMHost/MMDVMBM.ini;
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMBM.ini)
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
@@ -476,6 +476,7 @@ done;;
 6) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
 			                    [sS]* ) echo ""
@@ -490,6 +491,7 @@ done;;
 7) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
 			                    [sS]* ) echo ""
@@ -504,6 +506,7 @@ done;;
 8) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
 			                    [sS]* ) echo ""
@@ -518,7 +521,7 @@ done;;
 9) echo ""
 while true
 do
-                     
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
 			                    [sS]* ) echo ""
@@ -562,39 +565,25 @@ done;;
 11) echo ""
 while true
 do
-echo "Valor actual del Master: \33[1;33m${master#*=}\33[1;37m"
-                      read -p 'Brandmeister=master.spain-dmr.es / DMR+=eamaster04.xreflector.es: ' master1
-                          actualizar=S 
-                          case $actualizar in
-                    [sS]* ) echo ""
-                    master1=`echo "$master1" | tr -d '[[:space:]]'`
 
-
-#Convierte mayusculas en minúsculas
-master1=`echo "$master1" | tr [:upper:] [:lower:]`
-
-                          sed -i "$linea_master Address=$master1" /home/orangepi/MMDVMHost/MMDVMBM.ini
-
-master=$(awk "NR==139" /home/orangepi/MMDVMHost/MMDVMBM.ini)
-sed -i "4c $master" /home/orangepi/info_panel_control.ini
-
-        break;;
-        [nN]* ) echo ""
-        break;;
+                        # Modificacion
+                        actualizar=S 
+                        case $actualizar in
+                        [sS]* ) echo ""
+                        sed -i "232c $remoteaddress" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                        break;;
+                        [nN]* ) echo ""
+                        break;;
 esac
 done;;
 12) echo ""
 while true
 do
-                          echo -n "Valor actual del \33[1;37m${var100port#*=}\33[1;37m"
-                          var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMBM.ini;
-                      read -p 'Puerto para Brandmeister=62031 puerto para DMR+=55555 : ' miid
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-        [sS]* ) echo ""
-                          letra1=c
-                          linea4=$linea3port$letra1
-                          sed -i "$linea4 Port=$miid" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                          [sS]* ) echo ""
+                          sed -i "233c $remoteport" /home/orangepi/MMDVMHost/MMDVMBM.ini
         break;;
         [nN]* ) echo ""
         break;;
