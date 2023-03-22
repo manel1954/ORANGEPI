@@ -583,7 +583,7 @@ clear
                         echo "Quitando LIBRE del autoarranque >>>>>"
                         sleep 2
                         cd /home/orangepi/.config/autostart
-                        mv ESPECIAL.desktop /home/orangepi/AUTOSTART
+                        mv Abrir_ESPECIAL.desktop /home/orangepi/AUTOSTART
                         sed -i "10c MMDVMLIBRE=OFF" /home/orangepi/autoarranque.ini
                         break;;
                         [nN]* ) echo ""
@@ -891,7 +891,7 @@ clear
                         echo "Poniendo LIBRE en el autoarranque >>>>>"
                         sleep 2
                         cd /home/orangepi/AUTOSTART
-                        mv LIBRE.desktop /home/orangepi/.config/autostart/
+                        mv Abrir_ESPECIAL.desktop /home/orangepi/.config/autostart/
                         sed -i "10c MMDVMLIBRE=ON" /home/orangepi/autoarranque.ini
                         break;;
                         [nN]* ) echo ""
