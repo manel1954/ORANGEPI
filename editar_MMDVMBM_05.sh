@@ -68,7 +68,7 @@ echo "\33[1;36m   8)\33[0m Utilizar puerto USB (ttyACM1)\33[1;33m"
 echo "\33[1;36m   9)\33[0m Utilizar puerto USB (ttyUSB0)\33[1;33m"
 echo -n "                            - "
 
-mode=`grep -n -m 1 "^Port=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
+mode=`grep -n -m 1 "^UARTPort=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
 caracteres_linea=`expr $caracteres - 1`
@@ -82,7 +82,7 @@ idd1=`expr substr $idd 3 30`
 echo "$idd1"
 
 echo -n "\33[1;36m  11)\33[0m Modificar Address     - \33[1;33m"
-master=`grep -n -m 1 "^Address=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
+master=`grep -n -m 1 "^RemoteAddress=" /home/orangepi/MMDVMHost/MMDVMBM.ini`
 buscar=":"
 largo=`expr index $master $buscar`
 largo=`expr $largo + 1`
