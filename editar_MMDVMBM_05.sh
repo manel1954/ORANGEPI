@@ -1180,7 +1180,7 @@ do
                               actualizar=S 
                               case $actualizar in
 			                        [sS]* ) echo ""
-                              sudo pluma /home/orangepi/MMDVMHost/MMDVMBM.ini
+                              sudo geany /home/orangepi/MMDVMHost/MMDVMBM.ini
 			                        break;;
 			                        [nN]* ) echo ""
 			                        break;;
