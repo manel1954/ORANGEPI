@@ -1,6 +1,6 @@
 #!/bin/bash
 sed -i "6c Exec=sh cerrar_autoarranque.sh" /home/orangepi/Desktop/Autoarranque.desktop
-sed -i "7c Icon=/home/orangepi/ORANGEPI/AUTOARRANQUE.png" /home/orangepi/Desktop/Autoarranque.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/ICONO_AUTOARRANQUE_ON.png" /home/orangepi/Desktop/Autoarranque.desktop
 sed -i "10c Name[es_ES]=Cerrar Autoarranque" /home/orangepi/Desktop/Autoarranque.desktop
 
 sed -i "15c AUTOARRANQUE=ON" /home/orangepi/status.ini
