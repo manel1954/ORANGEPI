@@ -497,7 +497,7 @@ clear
 			                 echo "Quitando DUMP1090 del autoarranque >>>>>"
                        sleep 2
                        cd /home/orangepi/.config/autostart
-                       mv DUMP1090.desktop /home/orangepi/AUTOSTART
+                       mv dump1090.desktop /home/orangepi/AUTOSTART
 			                 sed -i "2c DUMP1090=OFF" /home/orangepi/autoarranque.ini
 			                 break;;
 			                 [nN]* ) echo ""
@@ -583,7 +583,7 @@ clear
                         echo "Quitando LIBRE del autoarranque >>>>>"
                         sleep 2
                         cd /home/orangepi/.config/autostart
-                        mv LIBRE.desktop /home/orangepi/AUTOSTART
+                        mv ESPECIAL.desktop /home/orangepi/AUTOSTART
                         sed -i "10c MMDVMLIBRE=OFF" /home/orangepi/autoarranque.ini
                         break;;
                         [nN]* ) echo ""
@@ -719,7 +719,7 @@ clear
                                             echo "Quitando AMBE SERVER del autoarranque >>>>>"
                                             sleep 2
                                             cd /home/orangepi/.config/autostart
-                                            mv AMBE_SERVER.desktop /home/orangepi/AUTOSTART
+                                            mv Abrir_ambe_server.desktop /home/orangepi/AUTOSTART
                                             sed -i "14c AMBE_SERVER=OFF" /home/orangepi/autoarranque.ini
                                             break;; 
                                             [nN]* ) echo ""
@@ -796,7 +796,7 @@ clear
                                             echo "Poniendo DUMP1090 en el autoarranque >>>>>"
                                             sleep 2
                                             cd /home/orangepi/AUTOSTART
-                                            mv DUMP1090.desktop /home/orangepi/.config/autostart/
+                                            mv dump1090.desktop /home/orangepi/.config/autostart/
                                             sed -i "2c DUMP1090=ON" /home/orangepi/autoarranque.ini
 			                                      break;;
 			                                      [nN]* ) echo ""
@@ -1027,7 +1027,7 @@ clear
                                             echo "Poniendo AMBE SERVER en el autoarranque >>>>>"
                                             sleep 2
                                             cd /home/orangepi/AUTOSTART
-                                            mv AMBE_SERVER.desktop /home/orangepi/.config/autostart/
+                                            mv Abrir_ambe_server.desktop /home/orangepi/.config/autostart/
                                             sed -i "14c AMBE_SERVER=ON" /home/orangepi/autoarranque.ini
                                             break;;
                                             [nN]* ) echo ""
