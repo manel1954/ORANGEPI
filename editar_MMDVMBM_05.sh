@@ -84,8 +84,9 @@ echo "$remoteaddress"
 
 #modificacion
 echo -n "\33[1;36m  12)\33[0m Modificar Puerto      - \33[1;33m"
-remoteport=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVMBM.ini)
-remoteport= sed -n 233p  /home/orangepi/MMDVMHost/MMDVMBM.ini;
+remoteport1=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVMBM.ini)
+echo "remoteport1"
+
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMBM.ini)
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
