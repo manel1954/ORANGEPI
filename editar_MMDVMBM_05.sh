@@ -479,9 +479,7 @@ do
                           # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
+			  [sS]* ) echo ""
                           sed -i "sed -i 51c UARTPort=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
@@ -494,9 +492,7 @@ do
                           # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
+			  [sS]* ) echo ""
                           sed -i "51c UARTPort=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
@@ -509,9 +505,7 @@ do
                           # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
+			  [sS]* ) echo ""
                           sed -i "51c UARTPort=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
@@ -524,9 +518,7 @@ do
                           # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
+			  [sS]* ) echo ""
                           sed -i "51c UARTPort=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVMBM.ini
 			  break;;
 			  [nN]* ) echo ""
@@ -567,10 +559,11 @@ while true
 do
 
                         # Modificacion
+                        read -p '   Introduce el RemoteAddress port que corresponda: ' remotaddress
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
-                        sed -i "232c $remoteaddress" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                        sed -i "232c RemoteAddress=$remoteaddress" /home/orangepi/MMDVMHost/MMDVMBM.ini
                         break;;
                         [nN]* ) echo ""
                         break;;
@@ -580,10 +573,11 @@ done;;
 while true
 do
                           # Modificacion
+                          read -p '   Introduce el Remote port que corresponda: ' remoteport
                           actualizar=S 
                           case $actualizar in
                           [sS]* ) echo ""
-                          sed -i "233c $remoteport" /home/orangepi/MMDVMHost/MMDVMBM.ini
+                          sed -i "233c RemotePort=$remoteport" /home/orangepi/MMDVMHost/MMDVMBM.ini
         break;;
         [nN]* ) echo ""
         break;;
