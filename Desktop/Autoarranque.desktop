@@ -7,5 +7,5 @@ Exec=sh ejecutar_autoarranque.sh
 Icon=/home/orangepi/ORANGEPI/AUTOARRANQUE.png
 Terminal=false
 StartupNotify=false
-Name[es_ES]=Abrir AUTOARRANQUE
+Name[es_ES]=Abrir Autoarranque
 Path=/home/orangepi/ORANGEPI
