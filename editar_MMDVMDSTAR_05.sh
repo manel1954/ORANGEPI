@@ -2,6 +2,24 @@
 while true
 do
 clear
+                  # Datos para el panel de control
+                  indi=$(awk "NR==2" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
+                  sed -i "1c $indi" /home/orangepi/info_panel_control.ini
+                  ide=$(awk "NR==3" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
+                  sed -i "2c $ide" /home/orangepi/info_panel_control.ini
+                  frec=$(awk "NR==13" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
+                  sed -i "3c $frec" /home/orangepi/info_panel_control.ini
+master=`grep -n -m 1 "^Address=" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini`
+buscar=":"
+largo=`expr index $master $buscar`
+largo=`expr $largo + 1`
+largo1=`expr $largo - 2`
+largo=`expr substr $master 1 $largo1`
+letra=c            
+linea_master=$largo$letra
+master=$(awk "NR==$linea_master" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
+                  sed -i "4c $master" /home/orangepi/info_panel_control.ini
+
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
 BLANCO="\033[1;37m"
@@ -9,10 +27,8 @@ AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
 echo "${VERDE}"
-echo "\33[1;32m   *${ROJO} V.02.06.03 ${VERDE}*************************************************************"
-#echo "   *                                                                        *"
-echo "   *       Script para Modificar MMDVMDSTAR.ini    \33[1;31m by EA3EIZ & EA4AOJ\33[1;32m     *"
-#echo "   *                                                                        *"
+echo "\33[1;32m   *${ROJO} V.02.07.05 ${VERDE}*************************************************************"
+echo "   *           Script para Modificar MMDVMDSTAR.ini    \33[1;31m by EA3EIZ & EA4AOJ\33[1;32m     *"
 echo "   **************************************************************************"
 echo -n "\33[1;36m   1)\33[0m Modificar indicativo  - \33[1;33m"
 ind=`grep -n -m 1 "Callsign" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini`
@@ -52,38 +68,25 @@ echo "\33[1;36m   8)\33[0m Utilizar puerto USB (ttyACM1)\33[1;33m"
 echo "\33[1;36m   9)\33[0m Utilizar puerto USB (ttyUSB0)\33[1;33m"
 echo -n "                            - "
 
-mode=`grep -n -m 1 "^Port=" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini`
-buscar=":"
-caracteres=`expr index $mode $buscar`
-caracteres_linea=`expr $caracteres - 1`
-numero_linea_port=`expr substr $mode 1 $caracteres_linea`
-mode=$(awk "NR==$numero_linea_port" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
-echo "$mode"
+# Modificacion
+modeport=$(awk "NR==51" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
+echo "$modeport"
 
 echo -n "\33[1;36m  10)\33[0m Modificar ID          - \33[1;33m"
 idd=`grep -n "Id=" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini`
 idd1=`expr substr $idd 3 30`
 echo "$idd1"
 
+#modificacion
 echo -n "\33[1;36m  11)\33[0m Modificar Address     - \33[1;33m"
-master=`grep -n -m 1 "^Address=" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini`
-buscar=":"
-largo=`expr index $master $buscar`
-largo=`expr $largo + 1`
-largo1=`expr $largo - 2`
-master1=`expr substr $master $largo 40`
-largo=`expr substr $master 1 $largo1`
-letra=c            
-linea=$largo$letra
-echo "$master1"
+remoteaddress=$(awk "NR==232" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
+echo "$remoteaddress"
 
+#modificacion
 echo -n "\33[1;36m  12)\33[0m Modificar Puerto      - \33[1;33m"
-lineaport=`expr substr $master 1 $largo1`
-lineaport=`expr $lineaport + 1`
-linea3port=$lineaport
-letra=p
-linea2port=$lineaport$letra
-var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMDSTAR.ini;
+remoteport=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
+echo "$remoteport"
+
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
@@ -286,8 +289,17 @@ modu=`grep -n -m 1 '\<Module\>' /home/orangepi/MMDVMHost/MMDVMDSTAR.ini`
 modu1=`expr substr $modu 4 30`
 echo "$modu1"
 
+
+
+
+
+
+
+
 echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
 var300port= sed -n 238p  /home/orangepi/MMDVMHost/MMDVMDSTAR.ini;
+
+
 
 echo ""
 echo "\33[1;36m  28)\33[1;33m Abrir fichero MMDVMDSTAR.ini para hacer cualquier cambio\33[1;33m"
