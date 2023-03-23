@@ -10,22 +10,22 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 echo "${VERDE}"
 echo "   **************************************************************************"
-echo "   *       Script para Modificar MMDVMDMR2NXDN.ini     \33[1;31m by EA4AOJ & EA3EIZ\33[1;32m  *"
+echo "   *       Script para Modificar MMDVMDMR2NXDN.ini     \33[1;31m by EA4AOJ & EA3EIZ\33[1;32m   *"
 echo "   **************************************************************************"
-echo -n "\33[1;36m   1)\33[0m Modificar indicativo  - \33[1;33m"
+echo -n "\33[1;36m   1)\33[0m Modificar indicativo  - ${VERDE}"
 ind=`grep -n -m 1 "Callsign" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
 ind1=`expr substr $ind 3 30`
-echo "${VERDE}$ind1"
+echo "$ind1"
 
-echo -n "\33[1;36m   2)\33[0m Modificar RXFrequency - \33[1;33m"
+echo -n "\33[1;36m   2)\33[0m Modificar RXFrequency - ${VERDE}"
 rxf=`grep -n "RXFrequency" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
 rxf1=`expr substr $rxf 4 30`
-echo "${VERDE}$rxf1"
+echo "$rxf1"
 
-echo -n "\33[1;36m   3)\33[0m Modificar TXFrequency - \33[1;33m"
+echo -n "\33[1;36m   3)\33[0m Modificar TXFrequency - ${VERDE}"
 txf=`grep -n "TXFrequency" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
 txf1=`expr substr $txf 4 30`
-echo "${VERDE}$txf1"
+echo "$txf1"
 
 echo -n "\33[1;36m   4)\33[0m Modificar Location    - \33[1;33m"
 loca=`grep -n "Locatio" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
@@ -37,44 +37,30 @@ url=`grep -n "URL" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
 url1=`expr substr $url 4 30`
 echo "$url1"
 
-echo "\33[1;36m   6)\33[0m Utilizar puerto interno (ttyS3)\33[1;33m"
+echo "\33[1;36m   6)\33[0m Utilizar puerto interno (ttyS0)\33[1;33m"
 echo "\33[1;36m   7)\33[0m Utilizar puerto USB (ttyACM0)\33[1;33m"
 echo "\33[1;36m   8)\33[0m Utilizar puerto USB (ttyACM1)\33[1;33m"
 echo "\33[1;36m   9)\33[0m Utilizar puerto USB (ttyUSB0)\33[1;33m"
 echo -n "                            - "
 
-mode=`grep -n -m 1 "^Port=" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
-buscar=":"
-caracteres=`expr index $mode $buscar`
-caracteres_linea=`expr $caracteres - 1`
-numero_linea_port=`expr substr $mode 1 $caracteres_linea`
-mode=$(awk "NR==$numero_linea_port" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini)
-echo "$mode"
+# Modificacion
+modeport=$(awk "NR==51" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini)
+echo "$modeport"
 
-echo -n "\33[1;36m  10)\33[0m Modificar ID          - \33[1;33m"
+echo -n "\33[1;36m  10)\33[0m Modificar ID          - ${VERDE}"
 idd=`grep -n "Id=" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
 idd1=`expr substr $idd 3 30`
-echo "${VERDE}$idd1"
+echo "$idd1"
 
+#modificacion 
 echo -n "\33[1;36m  11)\33[0m Modificar Address     - \33[1;33m"
-master=`grep -n -m 1 "^Address=" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
-buscar=":"
-largo=`expr index $master $buscar`
-largo=`expr $largo + 1`
-largo1=`expr $largo - 2`
-master1=`expr substr $master $largo 40`
-largo=`expr substr $master 1 $largo1`
-letra=c            
-linea_master=$largo$letra
-echo "${VERDE}$master1"
+remoteaddress=$(awk "NR==232" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini)
+echo "$remoteaddress"
 
-echo -n "\33[1;36m  12)\33[0m Modificar Puerto      - \033[1;32m"
-lineaport=`expr substr $master 1 $largo1`
-lineaport=`expr $lineaport + 1`
-linea3port=$lineaport
-letra=p
-linea2port=$lineaport$letra
-var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini;
+#modificacion
+echo -n "\33[1;36m  12)\33[0m Modificar Puerto      - \33[1;33m"
+remoteport=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini)
+echo "$remoteport"
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini)
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
@@ -140,10 +126,11 @@ dup=`grep -n -m 1 '\<Duplex\>' /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
 dup1=`expr substr $dup 3 30`
 echo -n "$dup1"
 
+
 echo -n "\33[1;36m        d)\33[0m P25         - \33[1;33m"
 p25=`grep -n "\[P25\]" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini` # devuelve ejem: 74:Enable=1
 buscar=":"
-largo_linea=`expr index $p25 $buscar` #comprueba el largo incluyendo los dos puntos (:) 
+largo_linea=`expr index $p25 $buscar` #comprueba el largo incluyendo los dos puntos (:)
 largo_linea=`expr $largo_linea - 1` #comprueba el largo quitando los dos puntos (:)
 numero_linea=`expr substr $p25 1 $largo_linea` # recoge el numero de linea (74)
 numero_linea_p25=`expr $numero_linea + 1` # y le suma uno qudando coomo: (75)
@@ -202,6 +189,7 @@ echo -n "$Display1"
 fi
 
 var=`grep -n -m 1 "\[Nextion\]" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
+#var1=`grep -m 1 "\[Nextion\]" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
 buscar=":"
 largo_linea=`expr index $var $buscar`
 largo_linea=`expr $largo_linea - 1`
@@ -270,11 +258,12 @@ modu=`grep -n -m 1 '\<Module\>' /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini`
 modu1=`expr substr $modu 4 30`
 echo "$modu1"
 
+# Modificacion
 echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
 var300port= sed -n 238p  /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini;
 
-echo "\33[1;36m  28)${BLANCO} Abrir fichero MMDVMDMR2NXDN.ini para hacer cualquier cambio\33[1;33m"
-
+echo ""
+echo "\33[1;36m  28)\33[1;33m Abrir fichero MMDVMDMR2NXDN.ini para hacer cualquier cambio\33[1;33m"
 echo -n "\33[1;36m  29)${GRIS} Local port            - ${VERDE}"
 var1=`grep -n "\[DMR Network\]" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini` # devuelve ejem: 138:Enable=1
 var=`echo "$var1" | tr -d '[[:space:]]'`
