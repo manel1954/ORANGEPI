@@ -68,61 +68,30 @@ echo "\33[1;36m   8)\33[0m Utilizar puerto USB (ttyACM1)\33[1;33m"
 echo "\33[1;36m   9)\33[0m Utilizar puerto USB (ttyUSB0)\33[1;33m"
 echo -n "                            - "
 
-mode=`grep -n -m 1 "^Port=" /home/orangepi/MMDVMHost/MMDVM.ini`
-buscar=":"
-caracteres=`expr index $mode $buscar`
-caracteres_linea=`expr $caracteres - 1`
-numero_linea_port=`expr substr $mode 1 $caracteres_linea`
-mode=$(awk "NR==$numero_linea_port" /home/orangepi/MMDVMHost/MMDVM.ini)
-echo "$mode"
+# Modificacion
+modeport=$(awk "NR==51" /home/orangepi/MMDVMHost/MMDVM.ini)
+echo "$modeport"
 
 echo -n "\33[1;36m  10)\33[0m Modificar ID          - \33[1;33m"
 idd=`grep -n "Id=" /home/orangepi/MMDVMHost/MMDVM.ini`
 idd1=`expr substr $idd 3 30`
 echo "$idd1"
 
+#modificacion
 echo -n "\33[1;36m  11)\33[0m Modificar Address     - \33[1;33m"
-master=`grep -n -m 1 "^Address=" /home/orangepi/MMDVMHost/MMDVM.ini`
-buscar=":"
-largo=`expr index $master $buscar`
-largo=`expr $largo + 1`
-largo1=`expr $largo - 2`
-master1=`expr substr $master $largo 40`
-largo=`expr substr $master 1 $largo1`
-letra=c            
-linea_master=$largo$letra
-echo "$master1"
+remoteaddress=$(awk "NR==232" /home/orangepi/MMDVMHost/MMDVM.ini)
+echo "$remoteaddress"
 
+#modificacion
 echo -n "\33[1;36m  12)\33[0m Modificar Puerto      - \33[1;33m"
-lineaport=`expr substr $master 1 $largo1`
-lineaport=`expr $lineaport + 1`
-linea3port=$lineaport
-letra=p
-linea2port=$lineaport$letra
-var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVM.ini;
-
-
-
-
-
+remoteport=$(awk "NR==233" /home/orangepi/MMDVMHost/MMDVM.ini)
+echo "$remoteport"
 
 
 pas=$(awk "NR==234" /home/orangepi/MMDVMHost/MMDVM.ini)
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
 pas1=`expr substr $pas 10 30`
 echo "$pas1"
-
-
-
-
-
-
-
-
-
-
-
-
 
 echo -n "\33[1;36m  14)\33[0m Modificar TXInvert    - \33[1;33m"
 txinv=`grep -n '\<TXInvert\>' /home/orangepi/MMDVMHost/MMDVM.ini`
@@ -508,12 +477,11 @@ done;;
 6) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVM.ini
+			  [sS]* ) echo ""
+                          sed -i "51c UARTPort=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -522,12 +490,11 @@ done;;
 7) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVM.ini
+			  [sS]* ) echo ""
+                          sed -i "51c UARTPort=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -536,12 +503,11 @@ done;;
 8) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVM.ini
+			  [sS]* ) echo ""
+                          sed -i "51c UARTPort=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -550,13 +516,11 @@ done;;
 9) echo ""
 while true
 do
-                     
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVM.ini
+			  [sS]* ) echo ""
+                          sed -i "51c UARTPort=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVM.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -594,39 +558,29 @@ done;;
 11) echo ""
 while true
 do
-echo "Valor actual del Master: \33[1;33m${master#*=}\33[1;37m"
-                      read -p 'Brandmeister=master.spain-dmr.es / DMR+=eamaster04.xreflector.es: ' master1
-                          actualizar=S 
-                          case $actualizar in
-                    [sS]* ) echo ""
-                    master1=`echo "$master1" | tr -d '[[:space:]]'`
 
-
-#Convierte mayusculas en minúsculas
-master1=`echo "$master1" | tr [:upper:] [:lower:]`
-
-                          sed -i "$linea_master Address=$master1" /home/orangepi/MMDVMHost/MMDVM.ini
-
-master=$(awk "NR==139" /home/orangepi/MMDVMHost/MMDVM.ini)
-sed -i "4c $master" /home/orangepi/info_panel_control.ini
-
-        break;;
-        [nN]* ) echo ""
-        break;;
+                        # Modificacion
+                        echo "Valor actual del Master: \33[1;33m${remoteaddress#*=}\33[1;37m"
+                        read -p 'Brandmeister=master.spain-dmr.es / DMR+=eamaster04.xreflector.es: ' remoteaddress
+                        actualizar=S 
+                        case $actualizar in
+                        [sS]* ) echo ""
+                        sed -i "232c RemoteAddress=$remoteaddress" /home/orangepi/MMDVMHost/MMDVM.ini
+                        break;;
+                        [nN]* ) echo ""
+                        break;;
 esac
 done;;
 12) echo ""
 while true
 do
-                          echo -n "Valor actual del \33[1;37m${var100port#*=}\33[1;37m"
-                          var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVM.ini;
-                      read -p 'Puerto para Brandmeister=62031 puerto para DMR+=55555 : ' miid
-                          actualizar=S 
-                          case $actualizar in
-        [sS]* ) echo ""
-                          letra1=c
-                          linea4=$linea3port$letra1
-                          sed -i "$linea4 Port=$miid" /home/orangepi/MMDVMHost/MMDVM.ini
+                        # Modificacion
+                        echo -n "Valor actual del \33[1;37m${remoteport#*=}\33[1;37m"
+                        read -p 'Puerto para Brandmeister=62031 puerto para DMR+=55555 : ' remoteport
+                        actualizar=S 
+                        case $actualizar in
+                        [sS]* ) echo ""
+                        sed -i "233c RemotePort=$remoteport" /home/orangepi/MMDVMHost/MMDVM.ini
         break;;
         [nN]* ) echo ""
         break;;
@@ -1180,7 +1134,7 @@ do
                               actualizar=S 
                               case $actualizar in
 			                        [sS]* ) echo ""
-                              sudo pluma /home/orangepi/MMDVMHost/MMDVM.ini
+                              sudo geany /home/orangepi/MMDVMHost/MMDVM.ini
 			                        break;;
 			                        [nN]* ) echo ""
 			                        break;;
