@@ -1161,7 +1161,7 @@ do
                           case $actualizar in
                           [sS]* ) echo ""
                           sudo geany /home/orangepi/DMR2YSF/TG-YSFList.txt &
-                          less /home/orangepi/YSFClients/YSFGateway/YSFHosts.txt
+                          mate-terminal --geometry=120x30 -x less /home/orangepi/YSFClients/YSFGateway/YSFHosts.txt
                           break;;
                           [nN]* ) echo ""
                           break;;
