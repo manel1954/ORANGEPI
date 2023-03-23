@@ -1,4 +1,12 @@
 #!/bin/bash
+ROJO="\033[1;31m"
+VERDE="\033[1;32m"
+BLANCO="\033[1;37m"
+AMARILLO="\033[1;33m"
+CIAN="\033[1;36m"
+GRIS="\033[0m"
+MARRON="\33[38;5;138m"
+
 sed -i "6c Exec=sh cerrar_especial.sh" /home/orangepi/Desktop/Abrir_ESPECIAL.desktop
 sed -i "7c Icon=/home/orangepi/ORANGEPI/ICONO_ESPECIAL_ON.png" /home/orangepi/Desktop/Abrir_ESPECIAL.desktop
 sed -i "10c Name[es_ES]=Cerrar ESPECIAL" /home/orangepi/Desktop/Abrir_ESPECIAL.desktop
@@ -11,7 +19,7 @@ clear
 echo "***********************************************"
 echo "*                 ESPECIAL                    * "
 echo "***********************************************"
-echo "\33[38;5;138m"
+echo "$"AMARILLO"
 sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
 clear
 sudo killall MMDVMESPECIAL
