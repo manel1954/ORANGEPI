@@ -439,12 +439,11 @@ done;;
 6) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
+			  [sS]* ) echo ""
+                          sed -i "51c UARTPort=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -453,12 +452,11 @@ done;;
 7) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
+			  [sS]* ) echo ""
+                          sed -i "51c UARTPort=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -467,12 +465,11 @@ done;;
 8) echo ""
 while true
 do
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
+			  [sS]* ) echo ""
+                          sed -i "51c UARTPort=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -481,13 +478,11 @@ done;;
 9) echo ""
 while true
 do
-                     
+                          # Modificacion
                           actualizar=S 
                           case $actualizar in
-			                    [sS]* ) echo ""
-                          letrac=c
-                          numero_linea_port=$numero_linea_port$letrac
-                          sed -i "$numero_linea_port Port=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
+			  [sS]* ) echo ""
+                          sed -i "51c UARTPort=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -525,41 +520,29 @@ done;;
 11) echo ""
 while true
 do
-echo "Valor actual del Master: \33[1;33m${master#*=}\33[1;37m"
-                      read -p 'Brandmeister=master.spain-dmr.es / DMR+=eamaster04.xreflector.es: ' master1
-                          actualizar=S 
-                          case $actualizar in
-                    [sS]* ) echo ""
-                    master1=`echo "$master1" | tr -d '[[:space:]]'`
-                    letra=c            
-                    linea=$largo$letra
 
-
-#Convierte mayusculas en minúsculas
-master1=`echo "$master1" | tr [:upper:] [:lower:]`
-
-                          sed -i "$linea Address=$master1" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
-
-master=$(awk "NR==139" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini)
-sed -i "4c $master" /home/orangepi/info_panel_control.ini
-
-        break;;
-        [nN]* ) echo ""
-        break;;
+                        # Modificacion
+                        echo "Valor actual del Master: \33[1;33m${remoteaddress#*=}\33[1;37m"
+                        read -p 'Brandmeister=master.spain-dmr.es / DMR+=eamaster04.xreflector.es: ' remoteaddress
+                        actualizar=S 
+                        case $actualizar in
+                        [sS]* ) echo ""
+                        sed -i "232c RemoteAddress=$remoteaddress" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
+                        break;;
+                        [nN]* ) echo ""
+                        break;;
 esac
 done;;
 12) echo ""
 while true
 do
-                          echo -n "Valor actual del \33[1;37m${var100port#*=}\33[1;37m"
-                          var100port= sed -n $linea2port  /home/orangepi/MMDVMHost/MMDVMDSTAR.ini;
-                      read -p 'Puerto para Brandmeister=62031 puerto para DMR+=55555 : ' miid
-                          actualizar=S 
-                          case $actualizar in
-        [sS]* ) echo ""
-                          letra1=c
-                          linea4=$linea3port$letra1
-                          sed -i "$linea4 Port=$miid" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
+                        # Modificacion
+                        echo -n "Valor actual del \33[1;37m${remoteport#*=}\33[1;37m"
+                        read -p 'Puerto para Brandmeister=62031 puerto para DMR+=55555 : ' remoteport
+                        actualizar=S 
+                        case $actualizar in
+                        [sS]* ) echo ""
+                        sed -i "233c RemotePort=$remoteport" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
         break;;
         [nN]* ) echo ""
         break;;
@@ -1107,37 +1090,13 @@ do
 			  break;;
 esac
 done;;
-#27) echo ""
-#while true
-#do
-#buscar=":"
-#largo=`expr index $rxinv $buscar`
-#echo "Valor  actual del  RXInvert: \33[1;33m${rxinv#*=}\33[1;37m"
-                     #read -p 'Valor óptimo para Motorola=0 para otras=1 : ' rxinv11
-                          #letra=c
-                         #if [ $largo = 3 ]
-                         #then
-                          #linea=`expr substr $rxinv 1 2`
-                          #else
-                          #linea=`expr substr $rxinv 1 3`
-                          #fi
-                          #linea=$linea$letra
-                          #actualizar=S 
-                          #case $actualizar in
-        #[sS]* ) echo ""
-                          #sed -i "$linea RXInvert=$rxinv11" /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
-        #break;;
-        #[nN]* ) echo ""
-        #break;;
-#esac
-#done;;
 28) echo ""
 while true
 do
                               actualizar=S 
                               case $actualizar in
 			                        [sS]* ) echo ""
-                              sudo pluma /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
+                              sudo geany /home/orangepi/MMDVMHost/MMDVMDSTAR.ini
 			                        break;;
 			                        [nN]* ) echo ""
 			                        break;;
