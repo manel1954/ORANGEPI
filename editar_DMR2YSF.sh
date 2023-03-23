@@ -1160,7 +1160,7 @@ do
                           actualizar=S 
                           case $actualizar in
                           [sS]* ) echo ""
-                          sudo pluma /home/orangepi/DMR2YSF/TG-YSFList.txt &
+                          sudo geany /home/orangepi/DMR2YSF/TG-YSFList.txt &
                           mate-terminal --geometry=120x30 -x less /home/orangepi/YSFClients/YSFGateway/YSFHosts.txt
                           
                           break;;
