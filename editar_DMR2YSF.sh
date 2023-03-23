@@ -1162,6 +1162,7 @@ do
                           [sS]* ) echo ""
                           sudo geany /home/orangepi/DMR2YSF/TG-YSFList.txt &
                           mate-terminal --geometry=120x30 -x less /home/orangepi/YSFClients/YSFGateway/YSFHosts.txt
+                          exit;
                           break;;
                           [nN]* ) echo ""
                           break;;
