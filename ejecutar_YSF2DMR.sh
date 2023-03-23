@@ -10,8 +10,6 @@ sed -i "14c YSF2DMR=ON" /home/orangepi/status.ini
 cd /home/orangepi/YSF2DMR
 
 
-sudo mate-terminal -x ./YSF2DMR YSF2DMR.ini & 
+mate-terminal --geometry 101x8+1277+797 --title=MMDVMDMR2YSF -x ./YSF2DMR YSF2DMR.ini & 
 cd /home/orangepi/MMDVMHost
-sudo mate-terminal -x ./MMDVMFUSION MMDVMFUSION.ini
-
-
+mate-terminal --geometry 101x9+1277+987 --title=YSFGATEWAY -x ./MMDVMFUSION MMDVMFUSION.ini
