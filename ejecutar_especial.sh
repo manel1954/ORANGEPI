@@ -19,7 +19,7 @@ clear
 echo "***********************************************"
 echo "*                 ESPECIAL                    * "
 echo "***********************************************"
-echo "$"AMARILLO"
+echo "${AMARILLO}"
 sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
 clear
 sudo killall MMDVMESPECIAL
