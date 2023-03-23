@@ -482,7 +482,7 @@ do
                           actualizar=S 
                           case $actualizar in
 			  [sS]* ) echo ""
-                          sed -i "51c UARTPort=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+                          sed -i "51c UARTPort=/dev/ttyS3" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -495,7 +495,7 @@ do
                           actualizar=S 
                           case $actualizar in
 			  [sS]* ) echo ""
-                          sed -i "51c UARTPort=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+                          sed -i "51c UARTPort=/dev/ttyACM0" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -508,7 +508,7 @@ do
                           actualizar=S 
                           case $actualizar in
 			  [sS]* ) echo ""
-                          sed -i "51c UARTPort=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+                          sed -i "51c UARTPort=/dev/ttyACM1" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -521,7 +521,7 @@ do
                           actualizar=S 
                           case $actualizar in
 			  [sS]* ) echo ""
-                          sed -i "51c UARTPort=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+                          sed -i "51c UARTPort=/dev/ttyUSB0" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini
 			  break;;
 			  [nN]* ) echo ""
 			  break;;
@@ -565,7 +565,7 @@ do
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
-                        sed -i "232c RemoteAddress=$remoteaddress" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+                        sed -i "232c RemoteAddress=$remoteaddress" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini
                         break;;
                         [nN]* ) echo ""
                         break;;
@@ -580,7 +580,7 @@ do
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
-                        sed -i "233c RemotePort=$remoteport" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+                        sed -i "233c RemotePort=$remoteport" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini
         break;;
         [nN]* ) echo ""
         break;;
