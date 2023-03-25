@@ -3,8 +3,8 @@ Version=1.0
 Type=Application
 Name=Editar solo D-STAR
 Comment=
-Exec=mate-terminal --geometry=80x41 -x sh editar_MMDVMDSTAR_05.sh
+Exec=./qt_editor_solodstar
 Icon=/home/orangepi/ORANGEPI/SOLO_D-STAR.png
-Path=/home/orangepi/ORANGEPI
+Path=/home/orangepi/qt
 Terminal=false
 StartupNotify=false
