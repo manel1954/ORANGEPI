@@ -2,9 +2,9 @@
 Version=1.0
 Type=Application
 Comment=
-Exec=mate-terminal --geometry=80x47 -x sh editar_YSF_05.sh
+Exec=./qt_editor_ysf_fcs_ycs
 Icon=/home/orangepi/ORANGEPI/editar_C4FM.png
-Path=/home/orangepi/ORANGEPI
+Path=/home/orangepi/qt
 Terminal=false
 StartupNotify=false
 Name[es_ES]=Editar YSF
