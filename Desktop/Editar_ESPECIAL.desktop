@@ -3,8 +3,8 @@ Version=1.0
 Type=Application
 Name=Editar ESPECIAL
 Comment=
-Exec=mate-terminal --geometry=80x47 -x sh editar_especial.sh
+Exec=./qt_editor_especial
 Icon=/home/orangepi/ORANGEPI/EDITAR_LIBRE.png
-Path=/home/orangepi/ORANGEPI
+Path=/home/orangepi/qt
 Terminal=false
 StartupNotify=false
