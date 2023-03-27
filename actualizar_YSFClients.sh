@@ -9,4 +9,4 @@
                         make clean
                         make
                         cd /home/orangepi/ORANGEPI
-                        cp YSFGateway /home/orangepi/YSFClients/YSFGateway
+                        cp YSFGateway.ini /home/orangepi/YSFClients/YSFGateway
