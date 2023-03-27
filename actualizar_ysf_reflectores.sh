@@ -1,6 +1,6 @@
 #!/bin/bash		        
-			echo "\33[1;32m ACTUALIZANDO REFLECTORES YSF>>>>>"
-			sleep 10
+			#echo "\33[1;32m ACTUALIZANDO REFLECTORES YSF>>>>>"
+			#sleep 10
 			
 			cd /home/orangepi/YSFClients/YSFGateway
 			sudo rm YSFHosts.txt
