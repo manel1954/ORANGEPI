@@ -8,3 +8,5 @@
                         cd /home/orangepi/YSFClients/YSFGateway
                         make clean
                         make
+                        cd /home/orangepi/ORANGEPI
+                        cp YSFGateway /home/orangepi/YSFClients/YSFGateway
