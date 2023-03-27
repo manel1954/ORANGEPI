@@ -21,6 +21,7 @@
 
                         chmod 777 -R /home/orangepi/qt
 
+                        cd /home/orangepi/ORANGEPI
                         su orangepi -c 'mono ImagenActualizada.exe'
 
                         
