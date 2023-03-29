@@ -1,4 +1,6 @@
 #!/bin/bash			            
+                        
+                        sh /home/orangepi/ORANGEPI/ejecutar_actualizando_YSFClients.sh & 
                         echo ">>>>>>>>> ACTUALIZANDO YSFClients"
                         cd /home/orangepi/
                         sudo rm -R YSFClients
