@@ -62,5 +62,7 @@
             cd /home/orangepi
             cp info_panel_control.ini /home/orangepi/COPIA_SEGURIDAD
 
-                  
+            cd /home/orangepi/
+            tar -zcvf copia.tar.gz COPIA_SEGURIDAD
+            mv  copia.tar.gz /home/orangepi/COPIA_SEGURIDAD  
                   
