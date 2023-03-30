@@ -69,6 +69,7 @@
                       
              #sudo rm -v /home/orangepi/COPIA_SEGURIDAD/!(copia.tar.gz)
              cd /home/orangepi/COPIA_SEGURIDAD
-           #GLOBIGNORE=copia.tar.gz
-           #rm -v *
-           #unset GLOBIGNORE     
+             sleep 5
+             GLOBIGNORE=copia.tar.gz
+             rm -v *
+             unset GLOBIGNORE     
