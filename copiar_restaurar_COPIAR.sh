@@ -1,5 +1,5 @@
 #!/bin/bash
-            sudo chmod +x -R /home/orangepi/Downloads
+            #sudo chmod +x -R /home/orangepi/Downloads
             cd /home/orangepi/MMDVMHost
             sudo cp -f TODOS_LOS_INIS.ini /home/orangepi/Downloads
             sudo cp -f MMDVM.ini /home/orangepi/Downloads
