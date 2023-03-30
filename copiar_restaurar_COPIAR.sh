@@ -67,7 +67,7 @@
             tar -zcvf copia.tar.gz COPIA_SEGURIDAD
             mv copia.tar.gz /home/orangepi/COPIA_SEGURIDAD
                       
-             cd /home/orangepi/COPIA_SEGURIDAD
+            cd /home/orangepi/COPIA_SEGURIDAD
             sudo rm *ini*
             sudo rm *.txt
             sudo rm *.conf

@@ -1,7 +1,9 @@
 #!/bin/bash
             sudo chmod -R 777 /home/orangepi/COPIA_SEGURIDAD
             sudo chmod -R 777 /home/orangepi/MMDVMHost
+
             cd /home/orangepi/COPIA_SEGURIDAD
+            tar -xvzf copia.tar.gz
             sudo cp -f TODOS_LOS_INIS.ini /home/orangepi/MMDVMHost
             sudo cp -f MMDVM.ini /home/orangepi/MMDVMHost
             sudo cp -f MMDVM.ini_copia /home/orangepi/MMDVMHost
@@ -61,6 +63,13 @@
 
             cp info_panel_control.ini /home/orangepi/
 
+
+            cd /home/orangepi/COPIA_SEGURIDAD
+            sudo rm *ini*
+            sudo rm *.txt
+            sudo rm *.conf
+            sudo rm *dstar*
+            sudo rm *ircddb*
             
 
             
