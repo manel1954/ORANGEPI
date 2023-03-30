@@ -70,3 +70,5 @@
              cd /home/orangepi/COPIA_SEGURIDAD
             sudo rm *.ini
             sudo rm *.txt
+            sudo rm *.conf
+            sudo rm *copia*
