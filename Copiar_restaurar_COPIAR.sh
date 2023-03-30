@@ -11,8 +11,8 @@
             sudo cp -f MMDVMBM.ini_copia /home/orangepi/Downloads
             sudo cp -f MMDVMBM.ini_copia2 /home/orangepi/Downloads
             sudo cp -f MMDVMBM.ini_copia3 /home/orangepi/Downloads
-            sudo cp -f MMDVMLIBRE.ini /home/orangepi/Downloads
             sudo cp -f MMDVMESPECIAL.ini /home/orangepi/Downloads
+            sudo cp -f MMDVMESPECIAL.ini_copia /home/orangepi/Downloads
             sudo cp -f MMDVMESPECIAL.ini_copia2 /home/orangepi/Downloads   
             sudo cp -f MMDVMESPECIAL.ini_copia3 /home/orangepi/Downloads   
             sudo cp -f MMDVMPLUS.ini /home/orangepi/Downloads
