@@ -1,6 +1,7 @@
 #!/bin/bash
             cd /home/orangepi
             mkdir COPIA_SEGURIDAD
+            sudo rm /home/orangepi/COPIA_SEGURIDAD/*.*
             sudo chmod +x -R /home/orangepi/COPIA_SEGURIDAD
             cd /home/orangepi/MMDVMHost
             cp -f TODOS_LOS_INIS.ini /home/orangepi/COPIA_SEGURIDAD
@@ -65,4 +66,6 @@
             cd /home/orangepi/
             tar -zcvf copia.tar.gz COPIA_SEGURIDAD
             mv  copia.tar.gz /home/orangepi/COPIA_SEGURIDAD  
+
+            rm -v !("copia.tar.gz")
                   
