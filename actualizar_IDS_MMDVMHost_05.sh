@@ -23,5 +23,6 @@ sed -i "$linea_sed DATABASEURL='https://ham-digital.org/status/users.csv'" /home
 
 sudo sh /home/orangepi/MMDVMHost/linux/DMRIDUpdate.sh
 
+cp /home/orangepi/MMDVMHost/DMRIds.dat /home/orangepi/DMR2NXDN
 cp /home/orangepi/MMDVMHost/DMRIds.dat /home/orangepi/DMR2YSF
 cp /home/orangepi/MMDVMHost/DMRIds.dat /home/orangepi/YSF2DMR
