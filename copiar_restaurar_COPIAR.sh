@@ -65,9 +65,9 @@
 
             cd /home/orangepi/     
             tar -zcvf copia.tar.gz COPIA_SEGURIDAD
-            mv  copia.tar.gz /home/orangepi/COPIA_SEGURIDAD
+            mv copia.tar.gz /home/orangepi/COPIA_SEGURIDAD
                       
-            #sudo rm -v /home/orangepi/COPIA_SEGURIDAD/!(copia.tar.gz)
+             #sudo rm -v /home/orangepi/COPIA_SEGURIDAD/!(copia.tar.gz)
              cd /home/orangepi/COPIA_SEGURIDAD
              GLOBIGNORE=*.gz
              rm -v *
