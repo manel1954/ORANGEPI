@@ -65,8 +65,6 @@
 
             cd /home/orangepi/     
             tar -zcvf copia.tar.gz COPIA_SEGURIDAD
-            mv  copia.tar.gz /home/orangepi/COPIA_SEGURIDAD  
-            # cd /home/orangepi/COPIA_SEGURIDAD
-            sleep 5
-            sudo rm -v /home/orangepi/COPIA_SEGURIDAD/!("copia.tar.gz")
+            mv  copia.tar.gz /home/orangepi/COPIA_SEGURIDAD              
+            sudo rm -v /home/orangepi/COPIA_SEGURIDAD/!('copia.tar.gz')
                   
