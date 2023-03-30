@@ -68,7 +68,8 @@
             mv copia.tar.gz /home/orangepi/COPIA_SEGURIDAD
                       
              cd /home/orangepi/COPIA_SEGURIDAD
-            sudo rm *.ini
+            sudo rm *ini*
             sudo rm *.txt
             sudo rm *.conf
-            sudo rm *copia*
+            sudo rm *dstar*
+            sudo rm *ircddb*
