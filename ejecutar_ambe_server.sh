@@ -14,12 +14,12 @@ cd /home/orangepi/AMBEServer
 sudo killall AMBEserver
 sleep 3
 mate-terminal --geometry 74x11+730+275 -x sudo ./AMBEserver -p $puerto_router -i $puerto_modem -s $baut_rate
+sleep 5
+sed -i "6c Exec=sh ejecutar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
+sed -i "7c Icon=/home/orangepi/ORANGEPI/AMBE_SERVER.png" /home/orangepi/Desktop/Abrir_ambe_server.desktop
+sed -i "10c Name[es_ES]=Abrir AMBE SERVER" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 
-#sed -i "6c Exec=sh ejecutar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
-#sed -i "7c Icon=/home/orangepi/ORANGEPI/AMBE_SERVER.png" /home/orangepi/Desktop/Abrir_ambe_server.desktop
-#sed -i "10c Name[es_ES]=Abrir AMBE SERVER" /home/orangepi/Desktop/Abrir_ambe_server.desktop
-#
-#sed -i "11c AMBE_SERVER=OFF" /home/orangepi/status.ini
+sed -i "11c AMBE_SERVER=OFF" /home/orangepi/status.ini
 
 
 
