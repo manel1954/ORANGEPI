@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /home/pi/BORRAR/
+cd /home/orangepi/BORRAR/
 shopt -s extglob
 rm -f !(no_borrar.txt)
