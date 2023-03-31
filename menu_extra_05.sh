@@ -194,9 +194,9 @@ clear
                         sudo usermod -a -G uucp orangepi
                         cd /home/orangepi/
                         
-                        #sudo rm -R qt
+                        sudo rm -R qt
                         
-                        #mkdir /home/orangepi/qt
+                        mkdir /home/orangepi/qt
                         
                         cd /home/orangepi/ORANGEPI
                         
