@@ -21,3 +21,5 @@ sed -i "10c Name[es_ES]=Abrir AMBE SERVER" /home/orangepi/Desktop/Abrir_ambe_ser
 
 sed -i "11c AMBE_SERVER=OFF" /home/orangepi/status.ini
 
+
+
