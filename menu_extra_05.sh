@@ -243,7 +243,7 @@ clear
                                 case $ejecutar1 in
                                 [sS]* ) echo ""
                                 cd /home/orangepi/qt
-                                ./qt_editor_rfcomms
+                                ./qt_editor_rfcomms &
                                 echo ""
                                 break;;
                                 [nN]* ) echo ""
