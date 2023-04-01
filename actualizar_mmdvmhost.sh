@@ -9,13 +9,23 @@
                     PUNTO=";"
                     
                     sed -i "22c $FIJA$HOY1$PUNTO" /home/orangepi/MMDVMHost/Version.h
-                    sed -i "171c val \/\= 100.0;" /home/orangepi/MMDVMHost/Nextion.cpp
+                    sed -i "171c val \/\= 1000.0;" /home/orangepi/MMDVMHost/Nextion.cpp
                 
                     make clean
                     make -f Makefile.Pi.OLED
 
 
                     # Crea los ejecutables para estas 4 aplicaciones 
+                    
+                    sudo rm MMDVMRADIO 
+                    sudo rm MMDVMBM
+                    sudo rm MMDVMPLUS
+                    sudo rm MMDVMESPECIAL
+                    sudo rm MMDVMDSTAR
+                    sudo rm MMDVMFUSION
+                    sudo rm DMR2NXDN
+                    sudo rm DMR2YSF
+                    
                     cp MMDVMHost MMDVMRADIO 
                     cp MMDVMHost MMDVMBM
                     cp MMDVMHost MMDVMPLUS
