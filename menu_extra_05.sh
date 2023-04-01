@@ -28,7 +28,43 @@ echo -n "\33[1;36m   Elige una opción: "
 read escoger_menu
 echo ""
 case $escoger_menu in
+1) echo ""
+while true
+do
+clear
 
+                        ejecutar1=S
+                        case $ejecutar1 in
+                        [sS]* ) echo ""                       
+                        cd /home/orangepi/ORANGEPI
+                        git pull 
+                        sleep 3
+                        
+                        #sudo chmod 777 ORANGE
+                        clear
+                        #cd /home/orangepi/AUTOSTART
+                        #git pull
+
+                        sudo usermod -a -G dialout orangepi
+                        sudo usermod -a -G uucp orangepi
+                        cd /home/orangepi/
+                        
+                        sudo rm -R qt
+                        
+                        mkdir /home/orangepi/qt
+                        
+                        cd /home/orangepi/ORANGEPI
+                        
+                        cp qt* /home/orangepi/qt
+
+                        chmod 777 -R /home/orangepi/qt
+			break;;
+			[nN]* ) echo ""
+clear
+exit;
+break;;
+esac
+done;;
 2) echo ""
 while true
 do
@@ -174,43 +210,6 @@ exit;
 break;;
 esac
 done;;
-1) echo ""
-while true
-do
-clear
-
-                        ejecutar1=S
-                        case $ejecutar1 in
-                        [sS]* ) echo ""                       
-                        cd /home/orangepi/ORANGEPI
-                        git pull 
-                        sleep 3
-                        
-                        #sudo chmod 777 ORANGE
-                        clear
-                        #cd /home/orangepi/AUTOSTART
-                        #git pull
-
-                        sudo usermod -a -G dialout orangepi
-                        sudo usermod -a -G uucp orangepi
-                        cd /home/orangepi/
-                        
-                        sudo rm -R qt
-                        
-                        mkdir /home/orangepi/qt
-                        
-                        cd /home/orangepi/ORANGEPI
-                        
-                        cp qt* /home/orangepi/qt
-
-                        chmod 777 -R /home/orangepi/qt
-			break;;
-			[nN]* ) echo ""
-clear
-exit;
-break;;
-esac
-done;;
 9) echo ""
 while true
 do
@@ -233,6 +232,23 @@ clear
                         [nN]* ) echo ""
                         clear
                         exit;
+break;;
+esac
+done;;
+10) echo ""
+while true
+do
+clear
+                                ejecutar1=S
+                                case $ejecutar1 in
+                                [sS]* ) echo ""
+                                cd /home/orangepi/qt
+                                ./qt_editor_rfcomms
+                                echo ""
+                                break;;
+                                [nN]* ) echo ""
+clear
+exit;
 break;;
 esac
 done;;
