@@ -25,6 +25,8 @@
                     sudo rm MMDVMFUSION
                     sudo rm DMR2NXDN
                     sudo rm DMR2YSF
+                    sudo rm MMDVMDMR2NXDN
+                    sudo rm MMDVMDMR2YSF
                     
                     cp MMDVMHost MMDVMRADIO 
                     cp MMDVMHost MMDVMBM
@@ -32,8 +34,8 @@
                     cp MMDVMHost MMDVMESPECIAL
                     cp MMDVMHost MMDVMDSTAR
                     cp MMDVMHost MMDVMFUSION
-                    cp MMDVMHost DMR2NXDN
-                    cp MMDVMHost DMR2YSF
+                    cp MMDVMHost MMDVMDMR2NXDN
+                    cp MMDVMHost MMDVMDMR2YSF
                     
 
 
