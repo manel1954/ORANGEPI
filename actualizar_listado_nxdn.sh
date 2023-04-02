@@ -1,7 +1,5 @@
 ﻿#!/bin/bash
-clear
-usuario=$(awk "NR==1" /home/orangepi/.config/autostart/usuario)
-SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)                                                                       
+clear                                                                      
 #Colores 
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
@@ -17,14 +15,16 @@ echo "${BLANCO}"
 echo "                       ACTUALIZANDO FICHERO NXDNHost.txt"
 echo "${VERDE}"
 echo "            ********************************************************"
-                
-cd $usuario/NXDNClients/NXDNGateway/
+
+cd /home/orangepi//NXDNClients/NXDNGateway/
+sudo wget -O NXDNHosts.tx https://github.com/g4klx/NXDNClients/blob/master/NXDNGateway/NXDNHosts.txt				
+sleep 3               
 rm -R private
 mkdir private
-cd $usuario/$SCRIPTS_version
-cp NXDNHosts.txt $usuario/NXDNClients/NXDNGateway/private
-cp NXDNHosts.txt $usuario/NXDNClients/NXDNGateway                            
-sleep 2
+
+cp NXDNHosts.txt /NXDNClients/NXDNGateway/private
+                           
+
 clear  
 echo "\v\v"  
 echo "${VERDE}"
@@ -33,6 +33,6 @@ echo "${AMARILLO}"
 echo "                    SE HA ACTUALIZADO EL FICHERO NXDNHost.txt"
 echo "${VERDE}"
 echo "            ********************************************************"
-sleep 4  
+sleep 2  
 exit	
 
