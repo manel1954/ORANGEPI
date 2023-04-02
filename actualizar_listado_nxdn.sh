@@ -17,10 +17,11 @@ echo "${VERDE}"
 echo "            ********************************************************"
 
 cd /home/orangepi//NXDNClients/NXDNGateway/
-sudo chmod 777 -R /home/orangepi//NXDNClients/NXDNGateway/
 sudo rm NXDNHosts.txt
-git pull				
-sleep 3               
+
+sudo wget https://github.com/g4klx/NXDNClients/blob/master/NXDNGateway/NXDNHosts.txt
+
+            
 rm -R private
 mkdir private
 
