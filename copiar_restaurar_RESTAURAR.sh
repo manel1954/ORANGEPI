@@ -44,9 +44,11 @@
             
             
             cp -f TG-YSFList.txt /home/orangepi/DMR2YSF
-
-
             sudo cp -f YSFGateway.ini /home/orangepi/YSFClients/YSFGateway/
+
+         
+            cp -f NXDNGateway.ini /home/orangepi/NXDNClients/NXDNGateway/        
+            cp -f NXDNHosts.txt NXDNGateway.ini /home/orangepi/NXDNClients/NXDNGateway/
 
             # sudo cp -f BlueDVconfig.ini /home/orangepi/bluedv/
 

@@ -47,6 +47,12 @@
 
             cd  /home/orangepi/YSFClients/YSFGateway/
             cp -f YSFGateway.ini /home/orangepi/COPIA_SEGURIDAD
+
+            cd  /home/orangepi/NXDNClients/NXDNGateway/
+            cp -f NXDNGateway.ini /home/orangepi/COPIA_SEGURIDAD
+
+            cd  /home/orangepi/NXDNClients/NXDNGateway/
+            cp -f NXDNHosts.txt NXDNGateway.ini /home/orangepi/COPIA_SEGURIDAD
             
             # cd /home/orangepi/bluedv/
             # cp -f BlueDVconfig.ini /home/orangepi/COPIA_SEGURIDAD
