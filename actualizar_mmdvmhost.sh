@@ -23,8 +23,6 @@
                     sudo rm MMDVMESPECIAL
                     sudo rm MMDVMDSTAR
                     sudo rm MMDVMFUSION
-                    sudo rm DMR2NXDN
-                    sudo rm DMR2YSF
                     sudo rm MMDVMDMR2NXDN
                     sudo rm MMDVMDMR2YSF
                     
