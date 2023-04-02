@@ -19,7 +19,7 @@ echo "            ********************************************************"
 cd /home/orangepi//NXDNClients/NXDNGateway/
 sudo rm NXDNHosts.txt
 read a
-git clone https://github.com/g4klx/NXDNClients/blob/master/NXDNGateway/NXDNHosts.txt				
+git clone https://github.com/g4klx/NXDNClients/NXDNGateway/NXDNHosts.txt				
 sleep 3               
 rm -R private
 mkdir private
