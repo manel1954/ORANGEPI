@@ -17,6 +17,7 @@ echo "${VERDE}"
 echo "            ********************************************************"
 
 cd /home/orangepi//NXDNClients/NXDNGateway/
+sudo chmod 777 -R /home/orangepi//NXDNClients/NXDNGateway/
 sudo rm NXDNHosts.txt
 git pull				
 sleep 3               
