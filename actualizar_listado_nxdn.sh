@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 clear
-usuario=$(awk "NR==1" /home/pi/.config/autostart/usuario)
+usuario=$(awk "NR==1" /home/orangepi/.config/autostart/usuario)
 SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)                                                                       
 #Colores 
 ROJO="\033[1;31m"
