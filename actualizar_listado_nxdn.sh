@@ -20,7 +20,7 @@ cd /home/orangepi//NXDNClients/NXDNGateway/
 
 sudo wget -O NXDNHosts.txt https://raw.githubusercontent.com/g4klx/NXDNClients/master/NXDNGateway/NXDNHosts.txt 
          
-sudo ∫rm -R private
+sudo rm -R private
 mkdir private
 
 cp NXDNHosts.txt /NXDNClients/NXDNGateway/private
