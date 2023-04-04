@@ -12,7 +12,7 @@ echo "***********************************************"
 echo "*                 BRANDMEISTER                * "
 echo "***********************************************"
 echo "\33[38;5;138m"
-mate-terminal --geometry 104x16+772+880 --title=BRANDMEISTER -x sudo ./MMDVMBM MMDVMBM.ini
+mate-terminal --geometry 104x16+775+880 --title=BRANDMEISTER -x sudo ./MMDVMBM MMDVMBM.ini
 clear
 sudo killall MMDVMBM
 cd /home/orangepi/ORANGEPI
