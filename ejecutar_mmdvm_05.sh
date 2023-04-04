@@ -22,7 +22,7 @@ echo "***********************************************"
 echo "*                 RADIO                       * "
 echo "***********************************************"
 #sleep 2
-killall MMDVMRADIO
+sudo killall MMDVMRADIO
 mate-terminal --geometry 104x16+777+880 --title=RADIO -x sh sudo ./MMDVMRADIO MMDVM.ini
 
 

@@ -13,7 +13,7 @@ echo "*                 BRANDMEISTER                * "
 echo "***********************************************"
 echo "\33[38;5;138m"
 clear
-killall MMDVMBM
+sudo killall MMDVMBM
 mate-terminal --geometry 104x16+777+880 --title=BRANDMEISTER -x sudo ./MMDVMBM MMDVMBM.ini
 cd /home/orangepi/ORANGEPI
 sed -i "7c MMDVMBM=OFF" /home/orangepi/status.ini
