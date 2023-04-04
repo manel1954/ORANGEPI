@@ -14,6 +14,7 @@ echo "*                 DMR+                        * "
 echo "***********************************************"
 #sleep 2
 echo "\33[1;37m"
+killall MMDVMPLUS
 mate-terminal --geometry 105x16+22+880 --title=DMR+ -x sudo ./MMDVMPLUS MMDVMPLUS.ini
  
 sed -i "6c Exec=mate-terminal --geometry 105x16+22+880 --title=DMR+ -x sh ejecutar_plus_05.sh" /home/orangepi/Desktop/DMRPLUS.desktop
