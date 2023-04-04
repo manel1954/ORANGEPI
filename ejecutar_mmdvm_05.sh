@@ -23,10 +23,10 @@ echo "*                 RADIO                       * "
 echo "***********************************************"
 #sleep 2
 
-mate-terminal --geometry 104x16+772+880 --title=RADIO -x sh ejecutar_mmdvm_05.sh" /home/orangepi/Desktop/MMDVM.desktop
-sudo ./MMDVMRADIO MMDVM.ini
+mate-terminal --geometry 104x16+777+880 --title=RADIO -x sh sudo ./MMDVMRADIO MMDVM.ini
 
-sed -i "6c Exec=mate-terminal --geometry 104x16+772+880 --title=RADIO -x sh ejecutar_mmdvm_05.sh" /home/orangepi/Desktop/MMDVM.desktop
+
+sed -i "6c Exec=mate-terminal --geometry 104x16+777+880 --title=RADIO -x sh ejecutar_mmdvm_05.sh" /home/orangepi/Desktop/MMDVM.desktop
 sed -i "7c Icon=/home/orangepi/ORANGEPI/MMDVM.png" /home/orangepi/Desktop/MMDVM.desktop
 sed -i "4c Name[es_ES]=Abrir Radio" /home/orangepi/Desktop/MMDVM.desktop
 
