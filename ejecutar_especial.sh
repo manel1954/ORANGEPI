@@ -20,7 +20,7 @@ echo "***********************************************"
 echo "*                 ESPECIAL                    * "
 echo "***********************************************"
 echo "${AMARILLO}"
-mate-terminal --geometry 104x16+772+880 --title=ESPECIAL -xsudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
+mate-terminal --geometry 104x16+772+880 --title=ESPECIAL -x sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
 clear
 sudo killall MMDVMESPECIAL
 cd /home/orangepi/ORANGEPI
