@@ -13,12 +13,14 @@
                         sed -i "3c sudo rfcomm bind /dev/rfcomm1 $mac" /home/orangepi/.local/bluetooth.sh
 
                         clear
-						echo ""
-						echo ""
+						echo "\33[1;32m" #color verde
+						echo "********************************************************************"
+						echo "*                   MAC ENLAZADA CORRECTAMENTE                     *"
+						echo "********************************************************************"
 						echo ""
 						echo "\33[1;31m" #color rojo
 						echo "********************************************************************"
-						echo "*    DEBERÁ REINICIAR SU SISTEMA PARA ANCLAR EL PUERTO rfcomm1     *"
+						echo "*    DEBERÁ REINICIAR SU SISTEMA PARA ANCLARLA AL PUERTO rfcomm1   *"
 						echo "********************************************************************"
 						echo "\33[1;37m" #color
                         read -p 'Quieres reiniciar ? S/N ' reiniciar
