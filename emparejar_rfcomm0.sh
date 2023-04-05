@@ -11,16 +11,23 @@
 			            echo "PEGA LA MAC DE TU BLUETOOTH aquí y pulsa Enter"	          		            
 			            read mac
                         sudo sed -i "2c sudo rfcomm bind /dev/rfcomm0 $mac" /home/orangepi/.local/bluetooth.sh
-                        #clear
-						#echo ""
-						#echo ""
-						#echo ""
-						#echo "\33[1;31m" #color rojo
-						#echo "********************************************************************"
-						#echo "*    SE VA A REINICIAR EL SISTEMA PARA ANCLAR EL PUERTO rfcomm1    *"
-						#echo "********************************************************************"
-						#echo "\33[1;37m" #color
-						#echo "Pulsa Enter para seguir"
-			            #sleep 3
-						#sudo reboot
-
+                                                clear
+						echo "\33[1;32m" #color verde
+						echo "  ********************************************************************"
+						echo "  *                   MAC ENLAZADA CORRECTAMENTE                     *"
+						echo "  ********************************************************************"
+						echo ""
+						echo "\33[1;31m" #color rojo
+						echo "  ********************************************************************"
+						echo "  * DEBERÁ REINICIAR SU SISTEMA PARA ANCLARLA AL PUERTO /dev/rfcomm0 *"
+						echo "  ********************************************************************"
+						echo "\33[1;37m" #color
+                        read -p '  Quieres reiniciar ? S/N ' reiniciar
+                        case $reiniciar in
+			  			[sS]* ) echo ""
+			  			sudo reboot
+			  			break;;
+			  			[nN]* ) echo ""
+			  			exit;
+						break;
+						esac

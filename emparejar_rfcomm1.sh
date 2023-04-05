@@ -14,16 +14,16 @@
 
                         clear
 						echo "\33[1;32m" #color verde
-						echo "********************************************************************"
-						echo "*                   MAC ENLAZADA CORRECTAMENTE                     *"
-						echo "********************************************************************"
+						echo "  ********************************************************************"
+						echo "  *                   MAC ENLAZADA CORRECTAMENTE                     *"
+						echo "  ********************************************************************"
 						echo ""
 						echo "\33[1;31m" #color rojo
-						echo "********************************************************************"
-						echo "*    DEBERÁ REINICIAR SU SISTEMA PARA ANCLARLA AL PUERTO rfcomm1   *"
-						echo "********************************************************************"
+						echo "  ********************************************************************"
+						echo "  * DEBERÁ REINICIAR SU SISTEMA PARA ANCLARLA AL PUERTO /dev/rfcomm1 *"
+						echo "  ********************************************************************"
 						echo "\33[1;37m" #color
-                        read -p 'Quieres reiniciar ? S/N ' reiniciar
+                        read -p '  Quieres reiniciar ? S/N ' reiniciar
                         case $reiniciar in
 			  			[sS]* ) echo ""
 			  			sudo reboot
