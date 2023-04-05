@@ -5,10 +5,10 @@
 						echo "\33[1;36m" # color Cian
 						sudo hcitool scan
 						echo "\33[1;32m" #color verde
-						echo "Copia la mac del modulo Bluetooth HC-05 para pegarla en el siguiente paso"
+						echo "Copia la MAC del modulo Bluetooth para pegarla en el siguiente paso"
 						echo ""
 						echo "\33[1;33m" #amarillo
-			            echo "PEGA LA MAC DE TU BLUETOOTH aquí y pulsa Enter"	          		            
+			            echo "Pega la MAC aquí y pulsa Enter"	          		            
 			            read mac
                         sudo sed -i "2c sudo rfcomm bind /dev/rfcomm0 $mac" /home/orangepi/.local/bluetooth.sh
                                                 clear
