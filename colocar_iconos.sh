@@ -13,9 +13,37 @@
 #sudo chmod 777 -R /home/pi/Desktop
 
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
-# pero no quita los semaforos que se queden encendidos por error al reiniciar
-sudo cp /home/orangepi/ORANGEPI/Desktop/*.* /home/orangepi/Desktop
-sudo chmod 777 -R /home/orangepi/Desktop
+# pero no quita los semaforos que se queden encendidos por error al reiniciar 
 
-cp /home/orangepi/icons.screen0-1904x1021.rc /home/orangepi/.config/xfce4/desktop
-xfdesktop -R                           
+
+
+
+# **************ESTO ES LO QUE HABÍA ANTES ***********************
+#sudo cp /home/orangepi/ORANGEPI/Desktop/*.* /home/orangepi/Desktop
+#sudo chmod 777 -R /home/orangepi/Desktop#
+
+#cp /home/orangepi/icons.screen0-1904x1021.rc /home/orangepi/.config/xfce4/desktop
+#xfdesktop -R  
+
+
+                                ejecutar1=S
+                                case $ejecutar1 in
+                                [sS]* ) echo ""
+                                cp -R /home/orangepi/ORANGEPI/Desktop /home/orangepi/
+                                sudo chmod +x -R /home/orangepi/Desktop
+                      
+                                echo ">>>>>>>>> RESTAURANDO ICONOS ESCRITORIO <<<<<<<<<"
+                                sleep 3
+                                clear
+                                echo ""
+                                echo "\33[1;32m<<<<<<<<< PROCESO FINALIZADO >>>>>>>>>"
+                                sleep 3
+                                break;;
+                                [nN]* ) echo ""
+                                clear
+                                exit;
+                                break;;
+                                esac
+
+
+
