@@ -15,6 +15,8 @@ largo_linea=`expr $largo_linea - 1`
 numero_linea=`expr substr $var 1 $largo_linea`
 letrac=c
 linea_sed=$numero_linea$letrac
+echo "$linea_sed"
+read a
 sed -i "$linea_sed DMRIDPATH=/home/orangepi/MMDVMHost" /home/orangepi/MMDVMHost/linux/DMRIDUpdate.sh
 
 # DMR IDs now served by RadioID.net 
@@ -25,6 +27,11 @@ largo_linea=`expr $largo_linea - 1`
 numero_linea=`expr substr $var 1 $largo_linea`
 letrac=c
 linea_sed=$numero_linea$letrac
+
+
+echo "$linea_sed"
+read a
+
 sed -i "$linea_sed DATABASEURL='https://ham-digital.org/status/users.csv'" /home/orangepi/MMDVMHost/linux/DMRIDUpdate.sh
 
 sudo sh /home/orangepi/MMDVMHost/linux/DMRIDUpdate.sh
