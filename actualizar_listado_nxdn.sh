@@ -22,7 +22,7 @@ sudo wget -O NXDNHosts.txt https://raw.githubusercontent.com/g4klx/NXDNClients/m
          
 #rm -R private
 #mkdir private
-
+ 
 sudo cp NXDNHosts.txt /NXDNClients/NXDNGateway/private
                            
 
