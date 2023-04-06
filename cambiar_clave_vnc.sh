@@ -2,7 +2,9 @@
                         ejecutar1=S
 		                case $ejecutar1 in
 			            [sS]* ) echo ""
-			            echo ">>>>>>>>> CAMBIAR CLAVE VNC >>>>>>>>"
+                        echo "   ********************************************************************"
+			            echo "   *                    Cambiar la clave del VNC                      *"                    
+                        echo "   ********************************************************************"
                         x11vnc --storepasswd
                         sleep 2
                         exit;
