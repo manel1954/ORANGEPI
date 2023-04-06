@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
- sh /home/orangepi/ORANGEPI/ejecutar_actualizando_YSFClients.sh & 
+ sh /home/orangepi/ORANGEPI/ejecutar_actualizando_ids.sh & 
 
 
 clear
