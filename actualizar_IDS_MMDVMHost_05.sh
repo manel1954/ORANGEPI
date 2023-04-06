@@ -1,7 +1,7 @@
 ﻿#!/bin/bash
 clear
 echo "\33[1;32m   ********************************************************************"
-echo "\33[1;32m   ******************** ACTUALIZANDO IDS INDICATIVOS ea3eiz******************"
+echo "\33[1;32m   ******************** ACTUALIZANDO IDS INDICATIVOS ******************"
 echo "\33[1;32m   ********************************************************************"
 sleep 10
 var=`grep -n -m 1 '\<DMRIDPATH\>' /home/orangepi/MMDVMHost/linux/DMRIDUpdate.sh`
