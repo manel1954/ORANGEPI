@@ -8,4 +8,4 @@ Path=/home/orangepi/ORANGEPI
 Terminal=false
 Name[es_ES]=Organizar ICONOS
 StartupNotify=false
-Exec=mate-terminal --geometry 73x19+700+50 -x sh colocar_iconos.sh
+Exec=mate-terminal --geometry 73x3+700+50 -x sh colocar_iconos.sh
