@@ -16,14 +16,14 @@ echo "                       ACTUALIZANDO FICHERO NXDNHost.txt"
 echo "${VERDE}"
 echo "            ********************************************************"
 
-cd /home/orangepi//NXDNClients/NXDNGateway/
+cd /home/orangepi/NXDNClients/NXDNGateway/
 
 sudo wget -O NXDNHosts.txt https://raw.githubusercontent.com/g4klx/NXDNClients/master/NXDNGateway/NXDNHosts.txt 
          
 #rm -R private
 #mkdir private
  
-sudo cp NXDNHosts.txt /NXDNClients/NXDNGateway/private
+sudo cp NXDNHosts.txt /home/orangepi/NXDNGateway/private
                            
 
 clear  
