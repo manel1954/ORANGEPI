@@ -8,7 +8,7 @@
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
                         cd /home/orangepi/ORANGEPI/
-                        sudo sh menu_dcs018∫.sh
+                        sudo sh menu_dcs018.sh
                         exit;
                         break;;
                         [nN]* ) echo ""
