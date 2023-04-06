@@ -1,30 +1,11 @@
 #!/bin/bash
-
-# recupera los iconos pero no los que se han quedado con e icono de un libro
-# y quita los semaforos que se queden encendidos por error al reiniciar
-#cp /home/pi/Desktop/*.desktop /home/pi
-#cp /home/pi/A108/Desktop/*.desktop /home/pi/Desktop
-#
-#cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
-#xfdesktop --reload
-#
-#cp /home/pi/*.desktop /home/pi/Desktop 
-#sudo rm /home/pi/*.desktop
-#sudo chmod 777 -R /home/pi/Desktop
-
-# recupera los iconos que se han borrado y se han convertido en icono de un libro
-# pero no quita los semaforos que se queden encendidos por error al reiniciar 
-
-
-
-
-# **************ESTO ES LO QUE HABÍA ANTES ***********************
-#sudo cp /home/orangepi/ORANGEPI/Desktop/*.* /home/orangepi/Desktop
-#sudo chmod 777 -R /home/orangepi/Desktop#
-
-#cp /home/orangepi/icons.screen0-1904x1021.rc /home/orangepi/.config/xfce4/desktop
-#xfdesktop -R  
-
+ROJO="\033[1;31m"
+VERDE="\033[1;32m"
+BLANCO="\033[1;37m"
+AMARILLO="\033[1;33m"
+CIAN="\033[1;36m"
+GRIS="\033[0m"
+echo "${VERDE}"
 
                                 ejecutar1=S
                                 case $ejecutar1 in
@@ -32,11 +13,11 @@
                                 cp -R /home/orangepi/ORANGEPI/Desktop /home/orangepi/
                                 sudo chmod +x -R /home/orangepi/Desktop
                                 echo "   ********************************************************************"
-                                echo "   *                  RESTAURANDO ICONOS ESCRITORIO                   *"
+                                echo "   *                RESTAURANDO ICONOS DEL ESCRITORIO                 *"
                                 echo "   ********************************************************************"
                                 sleep 3
                                 clear
-                                echo "   ********************************************************************"
+                                echo "echo ${AMARILLO}   ********************************************************************"
                                 echo "   *                  PROCESO EFECTUADO CORRECTAMENTE                 *"
                                 echo "   ********************************************************************"
                                 sleep 3
