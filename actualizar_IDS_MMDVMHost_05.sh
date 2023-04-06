@@ -1,4 +1,8 @@
 ﻿#!/bin/bash
+
+ sh /home/orangepi/ORANGEPI/ejecutar_actualizando_YSFClients.sh & 
+
+
 clear
 echo "\33[1;32m   ********************************************************************"
 echo "\33[1;32m   ******************** ACTUALIZANDO IDS INDICATIVOS ******************"
@@ -13,7 +17,7 @@ letrac=c
 linea_sed=$numero_linea$letrac
 sed -i "$linea_sed DMRIDPATH=/home/orangepi/MMDVMHost" /home/orangepi/MMDVMHost/linux/DMRIDUpdate.sh
 
-# DMR IDs now served by RadioID.net
+# DMR IDs now served by RadioID.net 
 var=`grep -n -m 1 '\<DATABASEURL\>' /home/orangepi/MMDVMHost/linux/DMRIDUpdate.sh`
 buscar=":"
 largo_linea=`expr index $var $buscar`
