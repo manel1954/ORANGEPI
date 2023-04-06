@@ -31,12 +31,15 @@
                                 [sS]* ) echo ""
                                 cp -R /home/orangepi/ORANGEPI/Desktop /home/orangepi/
                                 sudo chmod +x -R /home/orangepi/Desktop
-                      
-                                echo ">>>>>>>>> RESTAURANDO ICONOS ESCRITORIO <<<<<<<<<"
+                                echo "   ********************************************************************"
+                                echo "   *                  RESTAURANDO ICONOS ESCRITORIO                   *"
+                                echo "   ********************************************************************"
                                 sleep 3
                                 clear
                                 echo ""
-                                echo "\33[1;32m<<<<<<<<< PROCESO FINALIZADO >>>>>>>>>"
+                                echo "   ********************************************************************"
+                                echo "   *                  PROCESO EFECTUADO CORRECTAMENTE                 *"
+                                echo "   ********************************************************************"
                                 sleep 3
                                 break;;
                                 [nN]* ) echo ""
