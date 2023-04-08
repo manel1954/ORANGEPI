@@ -69,7 +69,8 @@
             cd /home/orangepi
             cp info_panel_control.ini /home/orangepi/COPIA_SEGURIDAD
 
-            cd /home/orangepi/COPIA_SEGURIDAD     
+            cd /home/orangepi/COPIA_SEGURIDAD
+            sudo chmod 777 -R /home/orangepi/COPIA_SEGURIDAD
             tar -zcvf copia.tar.gz *.*
             #mv copia.tar.gz /home/orangepi/COPIA_SEGURIDAD
                       
