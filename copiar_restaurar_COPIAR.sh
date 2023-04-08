@@ -78,5 +78,5 @@
             sudo rm *ini*
             sudo rm *.txt
             sudo rm *.conf
-            sudo rm *dstar*
-            sudo rm *ircddb*
+            #sudo rm *dstar*
+            #sudo rm *ircddb*
