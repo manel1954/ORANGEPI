@@ -1,6 +1,6 @@
 #!/bin/bash
             cd /home/orangepi
-            mkdir COPIA_SEGURIDAD
+            
             sudo rm /home/orangepi/COPIA_SEGURIDAD/*.*
             sudo chmod +x -R /home/orangepi/COPIA_SEGURIDAD
             cd /home/orangepi/MMDVMHost
@@ -55,7 +55,7 @@
             cp -f NXDNHosts.txt NXDNGateway.ini /home/orangepi/COPIA_SEGURIDAD
             
             # cd /home/orangepi/bluedv/
-            # cp -f BlueDVconfig.ini /home/orangepi/COPIA_SEGURIDAD
+            # cp -f BlueDVconfig.ini /home/orangepi/COPIA_SEGURIDAD 
 
             cd /usr/local/etc/svxlink/
             cp -f svxlink.conf /home/orangepi/COPIA_SEGURIDAD
@@ -63,8 +63,8 @@
             cd /usr/local/etc/svxlink/svxlink.d/
             cp -f ModuleEchoLink.conf /home/orangepi/COPIA_SEGURIDAD
 
-            cp /usr/local/etc/opendv/ircddbgateway /home/orangepi/COPIA_SEGURIDAD
-            cp /usr/local/etc/opendv/dstarrepeater /home/orangepi/COPIA_SEGURIDAD
+            sudo cp /usr/local/etc/opendv/ircddbgateway /home/orangepi/COPIA_SEGURIDAD
+            sudo cp /usr/local/etc/opendv/dstarrepeater /home/orangepi/COPIA_SEGURIDAD
 
             cd /home/orangepi
             cp info_panel_control.ini /home/orangepi/COPIA_SEGURIDAD
