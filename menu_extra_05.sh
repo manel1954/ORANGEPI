@@ -15,11 +15,11 @@ echo "\33[1;36m   1)\33[1;32m Actualizar imagen"
 echo "\33[1;36m   2)\33[1;37m Grabar Nextion"
 echo "\33[1;36m   3)\33[1;36m Copiar Tarjeta SD a la memoria interna EMMC"
 #echo "\33[1;36m   4)\33[1;36m Cambiar clave VNC"
-echo "\33[1;36m   5)\33[1;37m CONEXIONES DVRPTR DCS018"
+echo "\33[1;36m   4)\33[1;37m CONEXIONES DVRPTR DCS018"
 #echo "\33[1;36m   6)\33[1;33m INSTALAR ANYDESK (Aplicación escritorio remoto)"
 #echo "\33[1;36m   7)\33[1;37m RESTAURAR ICONOS DEL ESCRITORIO"
-echo "\33[1;36m   8)${VERDE} MENÚ ACTUALIZAR MMDVM_HS (Pincho Low Cost)"
-echo "\33[1;36m   9)${AMARILLO} ACTUALIZAR LISTA DE REFLECTORES D-STAR (DV4MINI-IRCDDB)"
+echo "\33[1;36m   5)${VERDE} MENÚ ACTUALIZAR MMDVM_HS (Pincho Low Cost)"
+echo "\33[1;36m   6)${AMARILLO} ACTUALIZAR LISTA DE REFLECTORES D-STAR (DV4MINI-IRCDDB)"
 #echo "\33[1;36m  10)${BLANCO} Menú para enparejar dispositivos Bluetooth)"
 echo ""
 echo "\33[1;36m   0)\33[1;34m Salir del script \33[1;31m OJO!! no salir con ctrl+c ni con la x"
@@ -122,7 +122,7 @@ exit;
 break;;
 esac
 done;;
-5) echo ""
+4) echo ""
 while true
 do
 clear
@@ -194,7 +194,7 @@ exit;
 break;;
 esac
 done;;
-8) echo ""
+5) echo ""
 while true
 do
 clear
@@ -210,7 +210,7 @@ exit;
 break;;
 esac
 done;;
-9) echo ""
+6) echo ""
 while true
 do
 clear
