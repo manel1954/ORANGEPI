@@ -6,5 +6,5 @@ Comment=
 Exec=mate-terminal --geometry 68x29+22+50 --title=SVXLINK -x sudo svxlink
 Icon=/home/orangepi/ORANGEPI/DMRPLUS_EDITOR.png
 Path=/home/orangepi/ORANGEPI
-Terminal=false
+Terminal=true
 StartupNotify=false
