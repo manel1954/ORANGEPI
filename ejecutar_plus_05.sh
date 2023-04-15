@@ -4,7 +4,7 @@ sed -i "7c Icon=/home/orangepi/ORANGEPI/DMRPLUS_ON.png" /home/orangepi/Desktop/D
 sed -i "10c Name[es_ES]=Cerrar DMR+" /home/orangepi/Desktop/DMRPLUS.desktop
 
 sed -i "6c MMDVMPLUS=ON" /home/orangepi/status.ini
-cd /home/orangepi
+cd /home/orangepi/qt
 ./qt_callsign_log
 echo "\33[1;37m"
 cd /home/orangepi/MMDVMHost
