@@ -17,6 +17,8 @@ echo "${VERDE}"
                                 echo "   ********************************************************************"
                                 sleep 3
                                 clear
+                                xfwm4 --replace & xfce4-panel -r
+                                sudo rm -r ~/.cache/sessions/
                                 echo "${AMARILLO}"
                                 echo "   ********************************************************************"
                                 echo "   *                  PROCESO EFECTUADO CORRECTAMENTE                 *"
